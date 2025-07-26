@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Rehman - Web Developer & AI Enthusiast</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">AR</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certifications" class="nav-link">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Abdul Rehman</h1>
+                <div class="hero-subtitle">
+                    I'm a <span id="typing-text"></span>
+                </div>
+                <p class="hero-description">
+                    A versatile BSCS student at GCUF (CGPA 3.73) with a passion for building innovative web and AI solutions. Currently developing professional applications at Wowbly Technology.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="cv.html" class="btn btn-secondary" target="_blank">
+                        <i class="fas fa-eye"></i> View CV
+                    </a>
+                    <a href="#" class="btn btn-secondary" onclick="downloadCV()">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/your-profile" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/your-username" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://huggingface.co/Rehman82" target="_blank" class="social-link">
+                        <i class="fas fa-brain"></i>
+                    </a>
+                    <a href="https://rehmandev.site" target="_blank" class="social-link">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="profile-image-wrapper">
+                        <img src="img.png" alt="Abdul Rehman - Professional Headshot" class="profile-image">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>
+                        I am a 7th-semester Computer Science student at Government College University Faisalabad. My journey in tech is driven by a deep interest in software development, artificial intelligence, and digital marketing. I am a hands-on developer, currently working at Wowbly Technology, and I love bringing ideas to life, whether it's a dynamic website or a helpful Python script. My international travel to Dubai has also given me a broader perspective that I bring to my work.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>3.73</h3>
+                            <p>CGPA</p>
+                        </div>
+                        <div class="stat">
+                            <h3>7th</h3>
+                            <p>Semester</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Web Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-php"></i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-wordpress"></i>
+                            <span>WordPress</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fab fa-python"></i> Python Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Data Analysis</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-robot"></i>
+                            <span>AI Applications</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-terminal"></i>
+                            <span>Scripting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-bullhorn"></i> Marketing</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-ad"></i>
+                            <span>Digital Marketing</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-share-alt"></i>
+                            <span>Social Media Management</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-search"></i>
+                            <span>SEO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>VS Code</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>PyCharm</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>XAMPP</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>n8n</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-comments"></i>
+                            <span>ChatGPT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Web Developer</h3>
+                    <span class="company">Wowbly Technology</span>
+                    <span class="location">Faisalabad</span>
+                </div>
+                <p class="experience-description">
+                    Developing and maintaining dynamic web solutions using PHP, HTML, CSS, and JavaScript, and collaborating with a team to deliver high-quality projects.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>dmremovals</h3>
+                        <p>A professional, client-facing website demonstrating functional and user-friendly design.</p>
+                        <div class="project-links">
+                            <a href="https://www.dmremovals.com.au" target="_blank" class="btn btn-small">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Python Mini-Projects</h3>
+                        <p>A collection of 10+ utility apps and AI tools built with Python and deployed on Hugging Face. Examples include AI Chatbot, Face Detection, Image Compressor.</p>
+                        <div class="project-links">
+                            <a href="https://huggingface.co/Rehman82" target="_blank" class="btn btn-small">View on Hugging Face</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Digital Marketing</h3>
+                    <p>DigiSkills</p>
+                </div>
+                <div class="certification-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Freelancing</h3>
+                    <p>DigiSkills</p>
+                </div>
+                <div class="certification-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Social Media Manager</h3>
+                    <p>HP LIFE</p>
+                </div>
+                <div class="certification-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>IELTS Certified</h3>
+                    <p>British Council</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>maharabdulrehman5@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Faisalabad, Pakistan</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Abdul Rehman. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
