@@ -423,6 +423,17 @@ section {
     gap: 1rem;
 }
 
+/* Tools Section */
+.tools {
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
 .skill-item {
     display: flex;
     flex-direction: column;
