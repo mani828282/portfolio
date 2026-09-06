@@ -101,6 +101,133 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Certification Category Filtering & Modal Lightbox
+    const filterBtns = document.querySelectorAll('.cert-filter-btn');
+    const certCards = document.querySelectorAll('.certification-card');
+    const certModal = document.getElementById('certModal');
+    const certModalImg = document.getElementById('certModalImg');
+    const certModalBadge = document.getElementById('certModalBadge');
+    const certModalTitle = document.getElementById('certModalTitle');
+    const certModalIssuer = document.getElementById('certModalIssuer');
+    const certModalClose = document.querySelector('.cert-modal-close');
+    const certModalBackdrop = document.querySelector('.cert-modal-backdrop');
+    const certModalPrev = document.querySelector('.cert-modal-prev');
+    const certModalNext = document.querySelector('.cert-modal-next');
+
+    let currentVisibleCards = Array.from(certCards);
+    let currentModalIndex = 0;
+
+    // Filter Logic
+    if (filterBtns.length > 0) {
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+                currentVisibleCards = [];
+
+                certCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        card.style.display = 'flex';
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                        currentVisibleCards.push(card);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'scale(0.9)';
+                        setTimeout(() => {
+                            if (card.style.opacity === '0') {
+                                card.style.display = 'none';
+                            }
+                        }, 300);
+                    }
+                });
+            });
+        });
+    }
+
+    // Function to open Modal with specific card index in currentVisibleCards
+    function openCertModal(index) {
+        if (!currentVisibleCards.length || !certModal) return;
+        currentModalIndex = (index + currentVisibleCards.length) % currentVisibleCards.length;
+        const card = currentVisibleCards[currentModalIndex];
+
+        const imgEl = card.querySelector('.cert-image-frame img');
+        const badgeEl = card.querySelector('.cert-badge');
+        const titleEl = card.querySelector('h3');
+        const issuerEl = card.querySelector('.cert-details p');
+
+        if (imgEl) {
+            certModalImg.src = imgEl.src;
+            certModalImg.style.display = 'block';
+        } else {
+            certModalImg.style.display = 'none';
+        }
+
+        if (badgeEl) {
+            certModalBadge.textContent = badgeEl.textContent;
+            certModalBadge.className = badgeEl.className;
+        }
+
+        if (titleEl) {
+            certModalTitle.textContent = titleEl.textContent;
+        }
+
+        if (issuerEl) {
+            certModalIssuer.innerHTML = issuerEl.innerHTML;
+        }
+
+        certModal.classList.add('active');
+        certModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeCertModal() {
+        if (!certModal) return;
+        certModal.classList.remove('active');
+        certModal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+
+    // Attach click event to all certification cards
+    certCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const index = currentVisibleCards.indexOf(card);
+            if (index !== -1) {
+                openCertModal(index);
+            } else {
+                openCertModal(0);
+            }
+        });
+    });
+
+    if (certModalClose) certModalClose.addEventListener('click', closeCertModal);
+    if (certModalBackdrop) certModalBackdrop.addEventListener('click', closeCertModal);
+
+    if (certModalPrev) {
+        certModalPrev.addEventListener('click', (e) => {
+            e.stopPropagation();
+            openCertModal(currentModalIndex - 1);
+        });
+    }
+
+    if (certModalNext) {
+        certModalNext.addEventListener('click', (e) => {
+            e.stopPropagation();
+            openCertModal(currentModalIndex + 1);
+        });
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (!certModal || !certModal.classList.contains('active')) return;
+        if (e.key === 'Escape') closeCertModal();
+        if (e.key === 'ArrowLeft') openCertModal(currentModalIndex - 1);
+        if (e.key === 'ArrowRight') openCertModal(currentModalIndex + 1);
+    });
+
 
 
     // Intersection Observer for Animations
