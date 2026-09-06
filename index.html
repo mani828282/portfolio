@@ -492,93 +492,323 @@
     <!-- Certifications Section -->
     <section id="certifications" class="certifications">
         <div class="container">
-            <h2 class="section-title">Certifications</h2>
+            <h2 class="section-title">Certifications & Achievements</h2>
+            <p class="section-subtitle" style="text-align: center; color: var(--text-muted); margin-bottom: 2rem; margin-top: -1.5rem; font-size: 1.1rem;">
+                Click any certificate frame to view in high resolution
+            </p>
+
+            <!-- Category Filter Controls -->
+            <div class="cert-filters">
+                <button class="cert-filter-btn active" data-filter="all">All (20)</button>
+                <button class="cert-filter-btn" data-filter="tech-ai">Tech & AI</button>
+                <button class="cert-filter-btn" data-filter="data-science">Data & Science</button>
+                <button class="cert-filter-btn" data-filter="digital-business">Digital & Business</button>
+                <button class="cert-filter-btn" data-filter="honors-exp">Honors & Experience</button>
+            </div>
+
             <div class="certifications-grid">
-                <div class="certification-card">
-                    <i class="fas fa-certificate"></i>
-                    <h3>Google Antigravity National Hackathon</h3>
-                    <p>Google</p>
+                <!-- 1. Google Antigravity Hackathon -->
+                <div class="certification-card" data-category="tech-ai">
+                    <div class="cert-image-frame">
+                        <img src="Google Antigravity National Hackathon Google.jpeg" alt="Google Antigravity National Hackathon" loading="lazy">
+                        <div class="cert-overlay">
+                            <span class="view-cert-btn"><i class="fas fa-expand"></i> View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-badge tech-ai">Google</span>
+                        <h3>Google Antigravity National Hackathon</h3>
+                        <p><i class="fas fa-award"></i> Google</p>
+                    </div>
                 </div>
-                <div class="certification-card">
-                    <i class="fas fa-certificate"></i>
-                    <h3>World Startups Championship 2025</h3>
-                    <p>Pakistan</p>
+
+                <!-- 2. World Startups Championship 2025 -->
+                <div class="certification-card" data-category="honors-exp">
+                    <div class="cert-image-frame">
+                        <img src="World Startups Championship 2025 SEE Pakistan.jpeg" alt="World Startups Championship 2025" loading="lazy">
+                        <div class="cert-overlay">
+                            <span class="view-cert-btn"><i class="fas fa-expand"></i> View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-badge honors-exp">Top 100 Startup</span>
+                        <h3>World Startups Championship 2025</h3>
+                        <p><i class="fas fa-trophy"></i> SEE Pakistan</p>
+                    </div>
                 </div>
-                <div class="certification-card">
-                    <i class="fas fa-certificate"></i>
-                    <h3>6-Month Internship Certificate</h3>
-                    <p>WOWBLY Technologies</p>
+
+                <!-- 3. Internship Certificate -->
+                <div class="certification-card" data-category="honors-exp">
+                    <div class="cert-image-frame">
+                        <img src="Internship Letter.jpeg" alt="6-Month Internship Certificate" loading="lazy">
+                        <div class="cert-overlay">
+                            <span class="view-cert-btn"><i class="fas fa-expand"></i> View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-badge honors-exp">Experience</span>
+                        <h3>6-Month Internship Certificate</h3>
+                        <p><i class="fas fa-building"></i> WOWBLY Technologies</p>
+                    </div>
                 </div>
-                <div class="certification-card">
-                    <i class="fas fa-certificate"></i>
-                    <h3>IELTS Certified</h3>
-                    <p>British Council</p>
+
+                <!-- 4. IEEE Congress Participation -->
+                <div class="certification-card" data-category="tech-ai">
+                    <div class="cert-image-frame">
+                        <img src="IEEE Congress Participation.jpeg" alt="IEEE Congress Participation" loading="lazy">
+                        <div class="cert-overlay">
+                            <span class="view-cert-btn"><i class="fas fa-expand"></i> View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-badge tech-ai">IEEE</span>
+                        <h3>IEEE Congress Participation</h3>
+                        <p><i class="fas fa-users"></i> IEEE Pakistan</p>
+                    </div>
                 </div>
-                <div class="certification-card">
-                    <i class="fas fa-certificate"></i>
-                    <h3>Crash Course in Python</h3>
-                    <p>Google</p>
+
+                <!-- 5. IEEE Ethical Hacking Workshop -->
+                <div class="certification-card" data-category="tech-ai">
+                    <div class="cert-image-frame">
+                        <img src="IEEE Workshop Ethical Hacking.jpeg" alt="IEEE Workshop Ethical Hacking" loading="lazy">
+                        <div class="cert-overlay">
+                            <span class="view-cert-btn"><i class="fas fa-expand"></i> View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-badge tech-ai">Cybersecurity</span>
+                        <h3>IEEE Ethical Hacking Workshop</h3>
+                        <p><i class="fas fa-shield-alt"></i> IEEE Student Branch</p>
+                    </div>
                 </div>
-                <div class="certification-card">
-                    <i class="fas fa-certificate"></i>
-                    <h3>Data Analytics Foundations</h3>
-                    <p>Google</p>
+
+                <!-- 6. Ethics of AI -->
+                <div class="certification-card" data-category="tech-ai">
+                    <div class="cert-image-frame">
+                        <img src="Ethics Of AI Coursera.jpeg" alt="Ethics Of AI" loading="lazy">
+                        <div class="cert-overlay">
+                            <span class="view-cert-btn"><i class="fas fa-expand"></i> View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-badge tech-ai">AI & Ethics</span>
+                        <h3>Ethics of Artificial Intelligence</h3>
+                        <p><i class="fas fa-brain"></i> Coursera</p>
+                    </div>
                 </div>
-                <div class="certification-card">
-                    <i class="fas fa-certificate"></i>
-                    <h3>Fundamentals of Digital Marketing</h3>
-                    <p>Google</p>
+
+                <!-- 7. Crash Course in Python -->
+                <div class="certification-card" data-category="tech-ai">
+                    <div class="cert-image-frame">
+                        <img src="Crash Course in Python Coursera.jpeg" alt="Crash Course in Python" loading="lazy">
+                        <div class="cert-overlay">
+                            <span class="view-cert-btn"><i class="fas fa-expand"></i> View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-badge tech-ai">Google</span>
+                        <h3>Crash Course in Python</h3>
+                        <p><i class="fab fa-google"></i> Google / Coursera</p>
+                    </div>
                 </div>
-                <div class="certification-card">
-                    <i class="fas fa-certificate"></i>
-                    <h3>Advancing the Digital Economy</h3>
-                    <p>ADB Institute</p>
+
+                <!-- 8. Data Analytics Foundations -->
+                <div class="certification-card" data-category="data-science">
+                    <div class="cert-image-frame">
+                        <img src="Data Analytics Foundations Coursera.jpeg" alt="Data Analytics Foundations" loading="lazy">
+                        <div class="cert-overlay">
+                            <span class="view-cert-btn"><i class="fas fa-expand"></i> View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-badge data-science">Google</span>
+                        <h3>Data Analytics Foundations</h3>
+                        <p><i class="fab fa-google"></i> Google / Coursera</p>
+                    </div>
                 </div>
-                <div class="certification-card">
-                    <i class="fas fa-certificate"></i>
-                    <h3>Climate Change & Sovereign Risk</h3>
-                    <p>ADB Institute</p>
+
+                <!-- 9. Google IT Support -->
+                <div class="certification-card" data-category="tech-ai">
+                    <div class="cert-image-frame">
+                        <img src="IT Support Coursera.jpeg" alt="IT Support Coursera" loading="lazy">
+                        <div class="cert-overlay">
+                            <span class="view-cert-btn"><i class="fas fa-expand"></i> View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-badge tech-ai">Google</span>
+                        <h3>Technical Support Fundamentals</h3>
+                        <p><i class="fab fa-google"></i> Google / Coursera</p>
+                    </div>
                 </div>
-                <div class="certification-card">
-                    <i class="fas fa-certificate"></i>
-                    <h3>Green Investments</h3>
-                    <p>ADB Institute</p>
+
+                <!-- 10. Fundamentals of Digital Marketing -->
+                <div class="certification-card" data-category="digital-business">
+                    <div class="cert-image-frame">
+                        <img src="Fundamentals of Digital Marketing Google.jpeg" alt="Fundamentals of Digital Marketing" loading="lazy">
+                        <div class="cert-overlay">
+                            <span class="view-cert-btn"><i class="fas fa-expand"></i> View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-badge digital-business">Google</span>
+                        <h3>Fundamentals of Digital Marketing</h3>
+                        <p><i class="fab fa-google"></i> Google Digital Garage</p>
+                    </div>
                 </div>
-                <div class="certification-card">
-                    <i class="fas fa-certificate"></i>
-                    <h3>Digital Marketing</h3>
-                    <p>DigiSkills</p>
+
+                <!-- 11. Advancing the Digital Economy -->
+                <div class="certification-card" data-category="data-science">
+                    <div class="cert-image-frame">
+                        <img src="Advancing the Digital Economy ADB Institute.jpeg" alt="Advancing the Digital Economy" loading="lazy">
+                        <div class="cert-overlay">
+                            <span class="view-cert-btn"><i class="fas fa-expand"></i> View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-badge data-science">ADB Institute</span>
+                        <h3>Advancing the Digital Economy</h3>
+                        <p><i class="fas fa-globe-asia"></i> ADB Institute</p>
+                    </div>
                 </div>
-                <div class="certification-card">
-                    <i class="fas fa-certificate"></i>
-                    <h3>Freelancing</h3>
-                    <p>DigiSkills</p>
+
+                <!-- 12. Climate Change & Sovereign Risk -->
+                <div class="certification-card" data-category="data-science">
+                    <div class="cert-image-frame">
+                        <img src="Climate Change & Sovereign Risk ADB Institute.jpeg" alt="Climate Change & Sovereign Risk" loading="lazy">
+                        <div class="cert-overlay">
+                            <span class="view-cert-btn"><i class="fas fa-expand"></i> View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-badge data-science">ADB Institute</span>
+                        <h3>Climate Change & Sovereign Risk</h3>
+                        <p><i class="fas fa-leaf"></i> ADB Institute</p>
+                    </div>
                 </div>
-                <div class="certification-card">
-                    <i class="fas fa-certificate"></i>
-                    <h3>Social Media Manager</h3>
-                    <p>HP LIFE</p>
+
+                <!-- 13. Green Investments -->
+                <div class="certification-card" data-category="data-science">
+                    <div class="cert-image-frame">
+                        <img src="Green Investments ADB Institute.jpeg" alt="Green Investments" loading="lazy">
+                        <div class="cert-overlay">
+                            <span class="view-cert-btn"><i class="fas fa-expand"></i> View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-badge data-science">ADB Institute</span>
+                        <h3>Green Investments in Renewable Energy</h3>
+                        <p><i class="fas fa-seedling"></i> ADB Institute</p>
+                    </div>
                 </div>
-                <div class="certification-card">
-                    <i class="fas fa-certificate"></i>
-                    <h3>Social Media Marketing</h3>
-                    <p>HP LIFE</p>
+
+                <!-- 14. Digital Marketing DigiSkills -->
+                <div class="certification-card" data-category="digital-business">
+                    <div class="cert-image-frame">
+                        <img src="Digital Marketing Digiskills.jpeg" alt="Digital Marketing DigiSkills" loading="lazy">
+                        <div class="cert-overlay">
+                            <span class="view-cert-btn"><i class="fas fa-expand"></i> View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-badge digital-business">DigiSkills</span>
+                        <h3>Digital Marketing Certification</h3>
+                        <p><i class="fas fa-bullhorn"></i> DigiSkills</p>
+                    </div>
                 </div>
-                <div class="certification-card">
-                    <i class="fas fa-certificate"></i>
-                    <h3>Effective Business Websites</h3>
-                    <p>HP LIFE</p>
+
+                <!-- 15. Freelancing DigiSkills -->
+                <div class="certification-card" data-category="digital-business">
+                    <div class="cert-image-frame">
+                        <img src="Freelancing Digiskills.jpeg" alt="Freelancing DigiSkills" loading="lazy">
+                        <div class="cert-overlay">
+                            <span class="view-cert-btn"><i class="fas fa-expand"></i> View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-badge digital-business">DigiSkills</span>
+                        <h3>Freelancing Professional Course</h3>
+                        <p><i class="fas fa-laptop-code"></i> DigiSkills</p>
+                    </div>
                 </div>
-                <div class="certification-card">
-                    <i class="fas fa-certificate"></i>
-                    <h3>Business Email</h3>
-                    <p>HP LIFE</p>
+
+                <!-- 16. Social Media Marketing HP LIFE -->
+                <div class="certification-card" data-category="digital-business">
+                    <div class="cert-image-frame">
+                        <img src="Social Media Marketing HP Life.jpeg" alt="Social Media Marketing HP LIFE" loading="lazy">
+                        <div class="cert-overlay">
+                            <span class="view-cert-btn"><i class="fas fa-expand"></i> View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-badge digital-business">HP LIFE</span>
+                        <h3>Social Media Marketing</h3>
+                        <p><i class="fas fa-share-alt"></i> HP LIFE</p>
+                    </div>
                 </div>
-                <div class="certification-card">
-                    <i class="fas fa-certificate"></i>
-                    <h3>Introduction to Peacebuilding</h3>
-                    <p>USIP</p>
+
+                <!-- 17. Effective Business Websites HP LIFE -->
+                <div class="certification-card" data-category="digital-business">
+                    <div class="cert-image-frame">
+                        <img src="Effective Business Websites HP Life.jpeg" alt="Effective Business Websites HP LIFE" loading="lazy">
+                        <div class="cert-overlay">
+                            <span class="view-cert-btn"><i class="fas fa-expand"></i> View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-badge digital-business">HP LIFE</span>
+                        <h3>Effective Business Websites</h3>
+                        <p><i class="fas fa-globe"></i> HP LIFE</p>
+                    </div>
                 </div>
+
+                <!-- 18. Business Email HP LIFE -->
+                <div class="certification-card" data-category="digital-business">
+                    <div class="cert-image-frame">
+                        <img src="Business Email HP Life.jpeg" alt="Business Email HP LIFE" loading="lazy">
+                        <div class="cert-overlay">
+                            <span class="view-cert-btn"><i class="fas fa-expand"></i> View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-badge digital-business">HP LIFE</span>
+                        <h3>Business Email Communication</h3>
+                        <p><i class="fas fa-envelope-open-text"></i> HP LIFE</p>
+                    </div>
+                </div>
+
+                <!-- 19. Introduction to Peacebuilding USIP -->
+                <div class="certification-card" data-category="data-science">
+                    <div class="cert-image-frame">
+                        <img src="Data Analytics Foundations USIP.jpeg" alt="Introduction to Peacebuilding USIP" loading="lazy">
+                        <div class="cert-overlay">
+                            <span class="view-cert-btn"><i class="fas fa-expand"></i> View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-badge data-science">USIP</span>
+                        <h3>Introduction to Peacebuilding</h3>
+                        <p><i class="fas fa-hands-helping"></i> USIP</p>
+                    </div>
+                </div>
+
+                <!-- 20. IELTS Certified -->
+                <div class="certification-card" data-category="honors-exp">
+                    <div class="cert-image-frame cert-badge-placeholder">
+                        <div class="placeholder-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div class="cert-overlay">
+                            <span class="view-cert-btn"><i class="fas fa-check-circle"></i> Certified</span>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-badge honors-exp">Language</span>
+                        <h3>IELTS English Proficiency</h3>
+                        <p><i class="fas fa-certificate"></i> British Council</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -597,6 +827,26 @@
             </div>
         </div>
     </section>
+
+    <!-- Lightbox Modal for Certificates -->
+    <div id="certModal" class="cert-modal" aria-hidden="true">
+        <div class="cert-modal-backdrop"></div>
+        <div class="cert-modal-container">
+            <button class="cert-modal-close" aria-label="Close modal">&times;</button>
+            <button class="cert-modal-nav cert-modal-prev" aria-label="Previous certificate"><i class="fas fa-chevron-left"></i></button>
+            <button class="cert-modal-nav cert-modal-next" aria-label="Next certificate"><i class="fas fa-chevron-right"></i></button>
+            <div class="cert-modal-content">
+                <div class="cert-modal-image-wrapper">
+                    <img id="certModalImg" src="" alt="Certificate Image">
+                </div>
+                <div class="cert-modal-info">
+                    <span id="certModalBadge" class="cert-badge">Category</span>
+                    <h3 id="certModalTitle">Certificate Title</h3>
+                    <p id="certModalIssuer"><i class="fas fa-award"></i> Issuer</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Scroll to Top Button -->
     <button id="scrollToTop" class="scroll-to-top">
