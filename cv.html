@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdul Rehman - CV</title>
+    <title>Abdul Rehman - Academic & Research Curriculum Vitae</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,103 +14,99 @@
         }
         
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: #f8fafc;
-        }
-        
-        .back-button {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-family: 'Arial', sans-serif;
-            font-weight: 600;
-            font-size: 14px;
-            transition: all 0.3s ease;
-            z-index: 1000;
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-        }
-        
-        .back-button:hover {
-            background: linear-gradient(135deg, #f093fb, #f5576c);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(240, 147, 251, 0.4);
-        }
-        
-        .back-button::before {
-            content: "←";
-            margin-right: 8px;
-            font-size: 16px;
+            color: #1e293b;
+            background: #f1f5f9;
+            padding: 20px 0;
         }
 
-        .download-button {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            border: none;
-            padding: 12px 20px;
+        .action-bar {
+            max-width: 900px;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+        }
+        
+        .btn-action {
+            background: #ffffff;
+            color: #4338ca;
+            border: 1px solid #cbd5e1;
+            padding: 10px 20px;
             border-radius: 8px;
             cursor: pointer;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Inter', sans-serif;
             font-weight: 600;
             font-size: 14px;
-            transition: all 0.3s ease;
-            z-index: 1000;
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+            transition: all 0.2s ease;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
             gap: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .btn-action:hover {
+            background: #4338ca;
+            color: #ffffff;
+            border-color: #4338ca;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(67, 56, 202, 0.2);
         }
 
-        .download-button:hover {
-            background: linear-gradient(135deg, #f093fb, #f5576c);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(240, 147, 251, 0.4);
+        .btn-primary-action {
+            background: linear-gradient(135deg, #4f46e5, #4338ca);
+            color: #ffffff;
+            border: none;
+        }
+
+        .btn-primary-action:hover {
+            background: linear-gradient(135deg, #4338ca, #3730a3);
+            color: #ffffff;
         }
         
         .cv-container {
-            max-width: 800px;
-            margin: 20px auto;
-            background: white;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-            border-radius: 10px;
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border-radius: 12px;
             overflow: hidden;
+            border: 1px solid #e2e8f0;
         }
         
         .header {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            padding: 40px;
+            background: linear-gradient(135deg, #1e1b4b, #312e81, #4338ca);
+            color: #ffffff;
+            padding: 45px 50px;
             text-align: center;
+            position: relative;
         }
         
         .header h1 {
+            font-family: 'Outfit', sans-serif;
             font-size: 2.5rem;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             font-weight: 700;
+            letter-spacing: -0.5px;
         }
         
         .header h2 {
-            font-size: 1.3rem;
-            margin-bottom: 20px;
-            opacity: 0.9;
+            font-size: 1.15rem;
+            margin-bottom: 22px;
+            color: #c7d2fe;
+            font-weight: 500;
         }
         
         .contact-info {
             display: flex;
             justify-content: center;
-            gap: 30px;
+            gap: 22px;
             flex-wrap: wrap;
+            font-size: 0.92rem;
+            color: #e0e7ff;
         }
         
         .contact-item {
@@ -116,383 +114,533 @@
             align-items: center;
             gap: 8px;
         }
+
+        .contact-item a {
+            color: #ffffff;
+            text-decoration: none;
+            border-bottom: 1px dotted #a5b4fc;
+        }
+
+        .contact-item a:hover {
+            color: #fbcfe8;
+        }
         
         .content {
-            padding: 40px;
+            padding: 45px 50px;
         }
         
         .section {
-            margin-bottom: 30px;
+            margin-bottom: 32px;
         }
         
-        .section h3 {
-            color: #667eea;
-            font-size: 1.4rem;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #667eea;
-            padding-bottom: 5px;
+        .section-title {
+            font-family: 'Outfit', sans-serif;
+            color: #1e1b4b;
+            font-size: 1.25rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 16px;
+            border-bottom: 2px solid #e0e7ff;
+            padding-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title i {
+            color: #4f46e5;
+            font-size: 1.1rem;
         }
         
-        .education-item, .experience-item {
-            margin-bottom: 20px;
-            padding: 15px;
+        .item-card {
+            margin-bottom: 18px;
+            padding: 16px 20px;
             background: #f8fafc;
             border-radius: 8px;
-            border-left: 4px solid #667eea;
+            border-left: 4px solid #4f46e5;
+            border-top: 1px solid #f1f5f9;
+            border-right: 1px solid #f1f5f9;
+            border-bottom: 1px solid #f1f5f9;
         }
         
-        .education-item h4, .experience-item h4 {
-            color: #333;
-            font-size: 1.1rem;
-            margin-bottom: 5px;
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 6px;
         }
-        
-        .education-item p, .experience-item p {
-            color: #666;
-            font-size: 0.9rem;
+
+        .item-header h4 {
+            color: #0f172a;
+            font-size: 1.08rem;
+            font-weight: 700;
+        }
+
+        .item-badge {
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 50px;
+            background: #ede9fe;
+            color: #5b21b6;
+        }
+
+        .item-sub {
+            color: #4338ca;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .item-desc {
+            color: #475569;
+            font-size: 0.93rem;
+            line-height: 1.65;
+        }
+
+        .item-links {
+            margin-top: 8px;
+            font-size: 0.85rem;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .item-links a {
+            color: #4f46e5;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .item-links a:hover {
+            text-decoration: underline;
+        }
+
+        .publication-box {
+            background: #faf5ff;
+            border-left: 4px solid #9333ea;
+            padding: 18px 20px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+
+        .publication-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #581c87;
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }
+
+        .publication-meta {
+            font-size: 0.88rem;
+            color: #6b21a8;
+            margin-bottom: 8px;
+        }
+
+        .doi-tag {
+            display: inline-block;
+            background: #f3e8ff;
+            color: #6b21a8;
+            font-family: monospace;
+            font-size: 0.82rem;
+            padding: 3px 8px;
+            border-radius: 4px;
+            border: 1px solid #d8b4fe;
+            margin-top: 6px;
         }
         
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
         }
         
         .skill-category {
             background: #f8fafc;
-            padding: 15px;
+            padding: 16px;
             border-radius: 8px;
-            border-left: 4px solid #667eea;
+            border-left: 3px solid #6366f1;
         }
         
         .skill-category h4 {
-            color: #667eea;
+            color: #1e1b4b;
+            font-size: 0.98rem;
             margin-bottom: 10px;
+            font-weight: 700;
         }
         
         .skill-list {
             list-style: none;
+            font-size: 0.9rem;
+            color: #475569;
         }
         
         .skill-list li {
             margin-bottom: 5px;
-            color: #555;
+            position: relative;
+            padding-left: 14px;
         }
-        
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
+
+        .skill-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #6366f1;
+            font-weight: bold;
         }
-        
-        .project-item {
-            background: #f8fafc;
-            padding: 15px;
-            border-radius: 8px;
-            border-left: 4px solid #667eea;
-        }
-        
-        .project-item h4 {
-            color: #667eea;
-            margin-bottom: 8px;
-        }
-        
-        .project-item p {
-            color: #666;
-            font-size: 0.9rem;
-        }
-        
-        .certifications-list {
+
+        .cert-list {
             list-style: none;
-        }
-        
-        .certifications-list li {
-            background: #f8fafc;
-            padding: 10px 15px;
-            margin-bottom: 10px;
-            border-radius: 8px;
-            border-left: 4px solid #667eea;
-            color: #555;
-        }
-
-        .tools-grid {
             display: grid;
-            grid-template-columns: repeat(6, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
             gap: 10px;
         }
 
-        .tool-item {
+        .cert-item {
+            background: #f8fafc;
+            padding: 10px 14px;
+            border-radius: 6px;
+            border-left: 3px solid #38bdf8;
+            font-size: 0.88rem;
+            color: #334155;
             display: flex;
-            flex-direction: column;
             align-items: center;
-            text-align: center;
-            font-size: 0.8rem;
-            color: #555;
-            padding: 10px;
-            background: #f8fafc;
-            border-radius: 8px;
-            border: 1px solid #e0e0e0;
+            gap: 8px;
         }
 
-        .tool-icon {
-            margin-bottom: 5px;
-        }
-
-        .tool-icon i {
-            font-size: 1.5rem;
-            color: #667eea;
-        }
-
-        .tool-name {
-            font-weight: 500;
-        }
-
-        .tools-section-grid {
-            display: grid;
-            grid-template-columns: repeat(6, minmax(100px, 1fr));
-            gap: 10px;
+        .cert-item i {
+            color: #0284c7;
+            font-size: 0.9rem;
         }
         
         @media print {
             body {
-                background: white;
+                background: #ffffff;
+                padding: 0;
+            }
+            .action-bar {
+                display: none !important;
             }
             .cv-container {
                 box-shadow: none;
                 margin: 0;
+                border: none;
+                border-radius: 0;
+                max-width: 100%;
+            }
+            .header {
+                padding: 30px;
+                background: #1e1b4b !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .content {
+                padding: 30px;
+            }
+            .item-card, .publication-box {
+                break-inside: avoid;
             }
         }
         
         @media (max-width: 768px) {
             .header {
-                padding: 20px;
+                padding: 30px 20px;
             }
             .header h1 {
                 font-size: 2rem;
             }
             .content {
-                padding: 20px;
+                padding: 30px 20px;
             }
             .contact-info {
                 flex-direction: column;
-                gap: 10px;
+                align-items: center;
+                gap: 8px;
+            }
+            .cert-list {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
+
+    <!-- Controls Bar -->
+    <div class="action-bar">
+        <a href="index.html" class="btn-action">
+            <i class="fas fa-arrow-left"></i> Return to Interactive Portfolio
+        </a>
+        <button onclick="window.print()" class="btn-action btn-primary-action">
+            <i class="fas fa-print"></i> Print / Save as Academic PDF
+        </button>
+    </div>
+
+    <!-- Curriculum Vitae Document Container -->
     <div class="cv-container">
-        <div class="header">
+        
+        <!-- Header -->
+        <header class="header">
             <h1>Abdul Rehman</h1>
-            <h2>Web Developer & AI Enthusiast</h2>
+            <h2>Computer Scientist & AI Researcher &bull; Aspiring Graduate Scholar</h2>
             <div class="contact-info">
                 <div class="contact-item">
-                    <strong>📧</strong>
-                    <span>maharabdulrehman5@gmail.com</span>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:maharabdulrehman5@gmail.com">maharabdulrehman5@gmail.com</a>
                 </div>
                 <div class="contact-item">
-                    <strong>📍</strong>
+                    <i class="fas fa-phone"></i>
+                    <span>+92 303 7197825</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
                     <span>Faisalabad, Pakistan</span>
                 </div>
                 <div class="contact-item">
-                    <strong>🔗</strong>
-                    <span><a href="https://www.linkedin.com/in/abdul-rehman-539306171/" target="_blank">LinkedIn</a></span>
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/abdul-rehman-539306171/" target="_blank">LinkedIn</a>
                 </div>
                 <div class="contact-item">
-                    <strong>🌐</strong>
-                    <span>rehmandev.site</span>
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/mani828282" target="_blank">GitHub</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-globe"></i>
+                    <a href="https://rahman-dev.site" target="_blank">rahman-dev.site</a>
                 </div>
             </div>
-        </div>
+        </header>
         
         <div class="content">
-            <div class="section">
-                <h3>Education</h3>
-                <div class="education-item">
-                    <h4>Bachelor of Science in Computer Science (BSCS)</h4>
-                    <p>Government College University, Faisalabad</p>
-                    <p>Current Status: 7th Semester | CGPA: 3.73</p>
-                    <p>Comprehensive program covering software development, algorithms, data structures, web technologies, and AI fundamentals.</p>
+
+            <!-- Academic & Research Statement -->
+            <section class="section">
+                <h3 class="section-title"><i class="fas fa-user-graduate"></i> Academic Profile & Research Vision</h3>
+                <p class="item-desc">
+                    Honors Computer Science graduate (<strong>3.76 / 4.00 CGPA</strong>) with demonstrated expertise spanning empirical Natural Language Processing research, full-stack mobile systems engineering, and national hackathon achievements. Primary research interests lie in <strong>Generative AI & Low-Resource Language Modeling</strong>, <strong>Computer Vision for Healthcare Diagnostics</strong>, and <strong>Algorithmic AI Safety</strong>. Actively seeking graduate admissions (MS/PhD) and prestigious international research scholarships (Fulbright, Erasmus Mundus, DAAD, Commonwealth).
+                </p>
+            </section>
+
+            <!-- Education -->
+            <section class="section">
+                <h3 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+                <div class="item-card">
+                    <div class="item-header">
+                        <h4>Bachelor of Science in Computer Science (BSCS)</h4>
+                        <span class="item-badge">Graduated with Honors</span>
+                    </div>
+                    <span class="item-sub">Government College University, Faisalabad (GCUF) &bull; CGPA: 3.76 / 4.00</span>
+                    <p class="item-desc">
+                        Comprehensive curriculum emphasizing advanced algorithms, artificial intelligence, operating systems, distributed database architecture, machine learning, and formal methods. Graduated in the top honors tier of the department.
+                    </p>
                 </div>
-            </div>
-            
-            <div class="section">
-                <h3>Professional Experience</h3>
-                <div class="experience-item">
-                    <h4>Web Development Intern</h4>
-                    <p>Wowbly Technologies, Faisalabad | 3 Months</p>
-                    <p>Contributed to the development and maintenance of web applications utilizing modern web technologies. Developed and implemented automation workflows using n8n to streamline internal processes and improve efficiency. Worked collaboratively with the development team on a variety of front-end and back-end tasks. Gained valuable experience within a professional software development lifecycle.</p>
+            </section>
+
+            <!-- Research & Publications -->
+            <section class="section">
+                <h3 class="section-title"><i class="fas fa-book-open"></i> Research Publications & Technical Reports</h3>
+                <div class="publication-box">
+                    <div class="publication-title">
+                        The Urdu Cloak: Socio-Technical Back-Translation and Adversarial AI Detection Evasion
+                    </div>
+                    <div class="publication-meta">
+                        <strong>Author:</strong> Abdul Rehman &bull; Empirical Study & Pre-print (2025/2026)
+                    </div>
+                    <p class="item-desc">
+                        Investigated the structural vulnerabilities of commercial and open-source AI content detectors when evaluated against multi-hop cross-lingual back-translation in low-resource Perso-Arabic scripts (Urdu &harr; English). Demonstrated how token distribution entropy shift undermines current detection heuristics and proposed equitable cross-lingual safety alignment metrics.
+                    </p>
+                    <div class="doi-tag">
+                        <i class="fas fa-fingerprint"></i> DOI: <a href="https://doi.org/10.5281/zenodo.20043256" target="_blank" style="color:#581c87; text-decoration:underline;">10.5281/zenodo.20043256</a>
+                    </div>
+                    <div class="item-links" style="margin-top: 10px;">
+                        <a href="The_Urdu_Cloak.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Read PDF Paper</a>
+                        <a href="https://doi.org/10.5281/zenodo.20043256" target="_blank"><i class="fas fa-external-link-alt"></i> Zenodo Repository</a>
+                        <a href="https://github.com/mani828282/urdu-cloak" target="_blank"><i class="fab fa-github"></i> Research Codebase</a>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="section">
-                <h3>Skills</h3>
+            </section>
+
+            <!-- Hackathons & Technical Competitions -->
+            <section class="section">
+                <h3 class="section-title"><i class="fas fa-trophy"></i> Hackathons & Technical Competitions</h3>
+                
+                <div class="item-card">
+                    <div class="item-header">
+                        <h4>AI Seekho: Google Antigravity National Hackathon 2026</h4>
+                        <span class="item-badge">Google for Developers</span>
+                    </div>
+                    <span class="item-sub">Organized by Google for Developers, Ministry of IT & Telecom, Innovista, Telenor 4G</span>
+                    <p class="item-desc">
+                        Selected to enter the national hackathon arena for AI orchestration and rapid vibe coding. Engineered multi-agent AI workflows and rapid prototype systems under strict timed hackathon constraints.
+                    </p>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-header">
+                        <h4>World Startup Championship 2025 &bull; SEE Pakistan</h4>
+                        <span class="item-badge">Top 100 in Pakistan</span>
+                    </div>
+                    <span class="item-sub">CMACED &bull; SEE Pakistan &bull; Association of Private Sector Universities (APSUP)</span>
+                    <p class="item-desc">
+                        Technical Founder for <strong>REPLAI</strong>. Shortlisted into the elite <strong>Top 100 Startups in Pakistan</strong> nationwide out of hundreds of entries. Completed intensive national startup bootcamps and pitched live before venture capitalists and academic evaluators.
+                    </p>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-header">
+                        <h4>UNESCO International Hackathon</h4>
+                        <span class="item-badge">UNESCO Initiative</span>
+                    </div>
+                    <span class="item-sub">United Nations Educational, Scientific and Cultural Organization (UNESCO)</span>
+                    <p class="item-desc">
+                        Participated in the competitive international hackathon organized under UNESCO initiatives. Collaborated on developing sustainable social-impact technology prototypes, addressing digital inclusion and global challenges.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Professional Experience -->
+            <section class="section">
+                <h3 class="section-title"><i class="fas fa-briefcase"></i> Professional Experience</h3>
+                <div class="item-card">
+                    <div class="item-header">
+                        <h4>Software Developer Intern</h4>
+                        <span class="item-badge">6 Months Duration</span>
+                    </div>
+                    <span class="item-sub">WOWBLY Technologies &bull; Faisalabad, Pakistan</span>
+                    <p class="item-desc">
+                        Contributed to the development and maintenance of high-performance web applications. Engineered automation workflows using n8n and Python to eliminate operational bottlenecks. Implemented backend APIs and database operations in an agile team setting.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Key Engineered Projects -->
+            <section class="section">
+                <h3 class="section-title"><i class="fas fa-code-branch"></i> Flagship Engineering Projects</h3>
+                <div class="item-card">
+                    <div class="item-header">
+                        <h4>Insaf AI &bull; Legal Assistance & Consultancy Mobile App</h4>
+                        <span class="item-badge">Flutter &bull; Firebase &bull; LLM</span>
+                    </div>
+                    <p class="item-desc">
+                        AI-powered legal advisory platform designed to simplify civic access to statutory legal codes. Features conversational AI guidance, case analysis, and document summaries.
+                    </p>
+                    <div class="item-links">
+                        <a href="https://github.com/mani828282/Insaf_AI" target="_blank"><i class="fab fa-github"></i> GitHub Code</a>
+                        <a href="https://github.com/mani828282/portfolio/releases/download/v1.2/Insaf.AI.apk"><i class="fas fa-download"></i> Download APK</a>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-header">
+                        <h4>PetScan AI &bull; Computer Vision Veterinary Diagnostics</h4>
+                        <span class="item-badge">Computer Vision &bull; Flutter &bull; FastAPI</span>
+                    </div>
+                    <p class="item-desc">
+                        Non-invasive diagnostic mobile app and web ecosystem using computer vision models to assess distress and pain indicators in domestic animals.
+                    </p>
+                    <div class="item-links">
+                        <a href="https://github.com/mani828282/PetScan-AI" target="_blank"><i class="fab fa-github"></i> App Repository</a>
+                        <a href="https://pet-scan.live/" target="_blank"><i class="fas fa-globe"></i> Live Web Platform</a>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-header">
+                        <h4>TruthGrid AI &bull; Media Authenticity & Deepfake Verification</h4>
+                        <span class="item-badge">Dart &bull; Flutter &bull; AI Integrity</span>
+                    </div>
+                    <p class="item-desc">
+                        Verification engine designed to inspect multi-modal media anomalies, detecting synthetically generated video/imagery to ensure content authenticity.
+                    </p>
+                    <div class="item-links">
+                        <a href="https://github.com/mani828282/TruthGrid-AI" target="_blank"><i class="fab fa-github"></i> GitHub Repository</a>
+                    </div>
+                </div>
+
+                <div class="item-card">
+                    <div class="item-header">
+                        <h4>Managerial Quotient &bull; Psychiatric Medical Assessment Web App</h4>
+                        <span class="item-badge">PHP &bull; MySQL &bull; Healthcare</span>
+                    </div>
+                    <p class="item-desc">
+                        Advanced psychometric evaluation system engineered for structured psychiatric assessments, scoring analytics, and clinical report generation.
+                    </p>
+                    <div class="item-links">
+                        <a href="https://www.managerialquotient.com" target="_blank"><i class="fas fa-globe"></i> www.managerialquotient.com</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technical Skills & Research Competencies -->
+            <section class="section">
+                <h3 class="section-title"><i class="fas fa-cogs"></i> Technical Skills & Research Competencies</h3>
                 <div class="skills-grid">
                     <div class="skill-category">
-                        <h4>Web Development</h4>
+                        <h4>Programming & AI</h4>
                         <ul class="skill-list">
-                            <li>HTML5 & CSS3</li>
-                            <li>JavaScript</li>
-                            <li>Bootstrap</li>
-                            <li>PHP</li>
-                            <li>MySQL</li>
-                            <li>WordPress</li>
+                            <li>Python (NumPy, Pandas, Scikit-Learn)</li>
+                            <li>Hugging Face Transformers</li>
+                            <li>FastAPI & RESTful Architecture</li>
+                            <li>Dart / Flutter (Cross-Platform Mobile)</li>
+                            <li>JavaScript (ES6+), HTML5, CSS3</li>
+                            <li>PHP, SQL (PostgreSQL, MySQL)</li>
                         </ul>
                     </div>
                     <div class="skill-category">
-                        <h4>Python Development</h4>
+                        <h4>Systems, Cloud & DevOps</h4>
                         <ul class="skill-list">
-                            <li>Data Analysis</li>
-                            <li>AI Applications</li>
-                            <li>Scripting</li>
-                            <li>Google Colab</li>
-                            <li>Hugging Face</li>
-                            <li>Google Data Studio</li>
+                            <li>Google Cloud Platform & Firebase</li>
+                            <li>Docker Containerization</li>
+                            <li>Git, GitHub Version Control</li>
+                            <li>n8n Workflow Automation</li>
+                            <li>DigitalOcean, Vercel, Render</li>
+                            <li>Linux / Bash Scripting</li>
                         </ul>
                     </div>
                     <div class="skill-category">
-                        <h4>Marketing</h4>
+                        <h4>Research & Academic Tools</h4>
                         <ul class="skill-list">
-                            <li>Digital Marketing</li>
-                            <li>Social Media Management</li>
-                            <li>SEO</li>
+                            <li>LaTeX / Overleaf Typesetting</li>
+                            <li>Google Colab GPU Environments</li>
+                            <li>Zenodo Research Archiving (DOI)</li>
+                            <li>Prompt Engineering & RAG Design</li>
+                            <li>Statistical Hypothesis Testing</li>
+                            <li>Technical Writing & IEEE Formatting</li>
                         </ul>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="section">
-                <h3>Tools</h3>
-                <div class="tools-section-grid">
-                    <div class="tool-item">
-                        <div class="tool-icon"><i class="fas fa-code"></i></div>
-                        <div class="tool-name">VS Code</div>
-                    </div>
-                    <div class="tool-item">
-                        <div class="tool-icon"><i class="fab fa-python"></i></div>
-                        <div class="tool-name">PyCharm</div>
-                    </div>
-                    <div class="tool-item">
-                        <div class="tool-icon"><i class="fas fa-edit"></i></div>
-                        <div class="tool-name">Cursor</div>
-                    </div>
-                    <div class="tool-item">
-                        <div class="tool-icon"><i class="fab fa-git-alt"></i></div>
-                        <div class="tool-name">Git</div>
-                    </div>
-                    <div class="tool-item">
-                        <div class="tool-icon"><i class="fab fa-github"></i></div>
-                        <div class="tool-name">GitHub</div>
-                    </div>
-                    <div class="tool-item">
-                        <div class="tool-icon"><i class="fas fa-server"></i></div>
-                        <div class="tool-name">XAMPP</div>
-                    </div>
-                    <div class="tool-item">
-                        <div class="tool-icon"><i class="fas fa-database"></i></div>
-                        <div class="tool-name">phpMyAdmin</div>
-                    </div>
-                    <div class="tool-item">
-                        <div class="tool-icon"><i class="fas fa-cogs"></i></div>
-                        <div class="tool-name">n8n</div>
-                    </div>
-                    <div class="tool-item">
-                        <div class="tool-icon"><i class="fas fa-comments"></i></div>
-                        <div class="tool-name">ChatGPT</div>
-                    </div>
-                    <div class="tool-item">
-                        <div class="tool-icon"><i class="fab fa-aws"></i></div>
-                        <div class="tool-name">AWS</div>
-                    </div>
-                    <div class="tool-item">
-                        <div class="tool-icon"><i class="fab fa-google"></i></div>
-                        <div class="tool-name">Google Cloud</div>
-                    </div>
-                    <div class="tool-item">
-                        <div class="tool-icon"><i class="fab fa-github"></i></div>
-                        <div class="tool-name">GitHub Pages</div>
-                    </div>
-                    <div class="tool-item">
-                        <div class="tool-icon"><i class="fab fa-figma"></i></div>
-                        <div class="tool-name">Figma</div>
-                    </div>
-                    <div class="tool-item">
-                        <div class="tool-icon"><i class="fas fa-palette"></i></div>
-                        <div class="tool-name">Canva</div>
-                    </div>
-                    <div class="tool-item">
-                        <div class="tool-icon"><i class="fas fa-wrench"></i></div>
-                        <div class="tool-name">PHPRad</div>
-                    </div>
+            <!-- Verified Honors & Certifications -->
+            <section class="section">
+                <h3 class="section-title"><i class="fas fa-certificate"></i> Verified Certifications & Honors</h3>
+                <div class="cert-list">
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> Google Antigravity National Hackathon (Google for Developers)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> World Startups Championship 2025 - Top 100 Startup (SEE Pakistan)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> 6-Month Software Development Certificate (WOWBLY Technologies)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> IEEE Congress Participation (IEEE Pakistan Section)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> IEEE Ethical Hacking & Security Workshop (IEEE Student Branch)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> Ethics of Artificial Intelligence (Coursera)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> Crash Course in Python (Google via Coursera)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> Technical Support Fundamentals (Google via Coursera)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> Foundations: Data Analytics (Google Data Specialization)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> Advancing the Digital Economy (Asian Development Bank Institute)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> Climate Change and Sovereign Risk (Asian Development Bank Institute)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> Green Investments in Renewable Energy (ADB Institute)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> Introduction to Peacebuilding (US Institute of Peace)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> English Language Proficiency Certified (IELTS - British Council)</div>
                 </div>
-            </div>
+            </section>
 
-            <div class="section">
-                <h3>Projects</h3>
-                <div class="projects-grid">
-                    <div class="project-item">
-                        <h4>The Urdu Cloak (Research Paper)</h4>
-                        <p>A rigorous socio-technical research project examining linguistic bias and AI detection evasion through cross-lingual back-translation.</p>
-                        <p><strong>Links:</strong> <a href="https://doi.org/10.5281/zenodo.20043256" target="_blank">DOI</a> | <a href="The_Urdu_Cloak.pdf" target="_blank">PDF</a></p>
-                    </div>
-                    <div class="project-item">
-                        <h4>dmremovals</h4>
-                        <p>A professional, client-facing website demonstrating functional and user-friendly design.</p>
-                        <p><strong>Link:</strong> <a href="https://www.dmremovals.com.au" target="_blank">dmremovals.com.au</a></p>
-                    </div>
-                    <div class="project-item">
-                        <h4>Python Mini-Projects</h4>
-                        <p>A collection of 10+ utility apps and AI tools built with Python and deployed on Hugging Face.</p>
-                        <p><strong>Examples:</strong> AI Chatbot, Face Detection, Image Compressor</p>
-                        <p><strong>Link:</strong> <a href="https://huggingface.co/Rehman82" target="_blank">Hugging Face Profile</a></p>
-                    </div>
-                    <div class="project-item">
-                        <h4>Ravi Exchange Website Management</h4>
-                        <p>WordPress Manager and Developer. Designed and built new, responsive pages to improve user engagement. Performed consistent updates and troubleshooting to ensure high availability and security. Managed all backend aspects of the WordPress site, including plugins and theme customizations.</p>
-                        <p><strong>Technologies:</strong> WordPress, PHP, HTML, CSS</p>
-                        <p><strong>Link:</strong> <a href="https://www.raviexchange.com" target="_blank">www.raviexchange.com</a></p>
-                    </div>
-                    <div class="project-item">
-                        <h4>Managerial Quotient (Psychiatric Assessment Tool)</h4>
-                        <p>Lead Developer. A web-based application developed as a tool for psychiatric assessments.</p>
-                        <p><strong>Link:</strong> <a href="https://www.managerialquotient.com" target="_blank">www.managerialquotient.com</a></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="section">
-                <h3>Certifications & Honors</h3>
-                <ul class="certifications-list">
-                    <li>Google Antigravity National Hackathon (Google)</li>
-                    <li>World Startups Championship 2025 - Top 100 Startup (SEE Pakistan)</li>
-                    <li>6-Month Internship Certificate (WOWBLY Technologies)</li>
-                    <li>IEEE Congress Participation (IEEE Pakistan)</li>
-                    <li>IEEE Ethical Hacking Workshop (IEEE)</li>
-                    <li>Ethics of Artificial Intelligence (Coursera)</li>
-                    <li>Crash Course in Python (Google via Coursera)</li>
-                    <li>Technical Support Fundamentals / IT Support (Google via Coursera)</li>
-                    <li>Foundations: Data, Data, Everywhere (Google Data Analytics Specialization)</li>
-                    <li>Fundamentals of Digital Marketing (Google Digital Garage)</li>
-                    <li>Advancing the Digital Economy for Sustainable Growth in Asia (ADB Institute)</li>
-                    <li>Climate Change and Sovereign Risk (ADB Institute)</li>
-                    <li>Green Investments in Renewable Energy (ADB Institute)</li>
-                    <li>Digital Marketing (DigiSkills)</li>
-                    <li>Freelancing (DigiSkills)</li>
-                    <li>Social Media Marketing (HP LIFE)</li>
-                    <li>Effective Business Websites (HP LIFE)</li>
-                    <li>Business Email Communication (HP LIFE)</li>
-                    <li>Introduction to Peacebuilding (United States Institute of Peace)</li>
-                    <li>IELTS Certified English Proficiency (British Council)</li>
-                </ul>
-            </div>
-            
-            <div class="section">
-                <h3>About Me</h3>
-                <p style="color: #666; line-height: 1.8;">
-                    As a 7th-semester Computer Science student with a 3.73 CGPA from Government College University, Faisalabad, I possess a strong foundation in web development, Python for data analysis, and AI automation. My three-month internship at Wowbly Technologies provided hands-on experience in developing and maintaining web applications, implementing automation workflows with n8n, and collaborating on front-end and back-end tasks within a professional software development lifecycle. Through key projects like the Ravi Exchange website management and various Python mini-projects on Hugging Face, I have demonstrated proactive problem-solving and technical proficiency. I am eager to contribute to innovative teams in software engineering, web development, and data analytics.
-                </p>
-            </div>
         </div>
     </div>
+
 </body>
 </html>
