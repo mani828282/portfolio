@@ -69,7 +69,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // TypeWriter
     const txtElement = document.querySelector('#typing-text');
     if (txtElement) {
-        const words = ['Mobile App Developer', 'Web Developer', 'AI Specialist', 'Software Developer'];
+        const words = [
+            'AI & NLP Researcher',
+            'Mobile & Cloud Systems Engineer',
+            'Top 100 Startup Founder',
+            'National Hackathon Builder',
+            'Aspiring Graduate Scholar'
+        ];
         new TypeWriter(txtElement, words, 2500);
     }
 
@@ -88,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (navbar) {
                 if (window.scrollY > 50) {
                     navbar.style.padding = '0.8rem 0';
-                    navbar.style.background = 'rgba(15, 23, 42, 0.9)';
+                    navbar.style.background = 'rgba(15, 23, 42, 0.95)';
                 } else {
                     navbar.style.padding = '1.2rem 0';
                     navbar.style.background = 'rgba(30, 41, 59, 0.7)';
@@ -184,11 +190,36 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = 'hidden';
     }
 
+    // Direct modal opener for standalone buttons (e.g. Hackathon certificates)
+    function openDirectModal(src, title, issuer, badgeText) {
+        if (!certModal) return;
+        if (certModalImg) {
+            certModalImg.src = src;
+            certModalImg.style.display = 'block';
+        }
+        if (certModalTitle) certModalTitle.textContent = title;
+        if (certModalIssuer) certModalIssuer.innerHTML = `<i class="fas fa-award"></i> ${issuer}`;
+        if (certModalBadge) {
+            certModalBadge.textContent = badgeText || 'Achievement';
+            certModalBadge.className = 'cert-badge tech-ai';
+        }
+
+        // Hide prev/next navigation for single direct views
+        if (certModalPrev) certModalPrev.style.display = 'none';
+        if (certModalNext) certModalNext.style.display = 'none';
+
+        certModal.classList.add('active');
+        certModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+    }
+
     function closeCertModal() {
         if (!certModal) return;
         certModal.classList.remove('active');
         certModal.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = '';
+        if (certModalPrev) certModalPrev.style.display = '';
+        if (certModalNext) certModalNext.style.display = '';
     }
 
     // Attach click event to all certification cards
@@ -200,6 +231,19 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 openCertModal(0);
             }
+        });
+    });
+
+    // Attach click events to Hackathon & standalone certificate buttons
+    const directCertButtons = document.querySelectorAll('.btn-cert-modal');
+    directCertButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const src = btn.getAttribute('data-cert-src');
+            const title = btn.getAttribute('data-cert-title');
+            const issuer = btn.getAttribute('data-cert-issuer');
+            const badge = btn.getAttribute('data-cert-badge');
+            openDirectModal(src, title, issuer, badge);
         });
     });
 
@@ -228,12 +272,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.key === 'ArrowRight') openCertModal(currentModalIndex + 1);
     });
 
-
-
     // Intersection Observer for Animations
     const observerOptions = {
-        threshold: 0.15,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0.1,
+        rootMargin: '0px 0px -40px 0px'
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -245,11 +287,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    const animatedElements = document.querySelectorAll('.skill-category, .project-card, .certification-card, .experience-item, .stat, .recognition-info, .roller-item');
+    const animatedElements = document.querySelectorAll(
+        '.skill-category, .project-card, .certification-card, .experience-item, .stat, .recognition-info, .roller-item, .hackathon-card, .academic-card, .research-spotlight-card, .interest-card, .contact-card'
+    );
     animatedElements.forEach(el => {
         el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+        el.style.transform = 'translateY(25px)';
+        el.style.transition = 'all 0.7s cubic-bezier(0.4, 0, 0.2, 1)';
         observer.observe(el);
     });
 });
