@@ -356,8 +356,8 @@ section {
 
 .about-stats {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
 }
 
 .stat h3 {
@@ -865,14 +865,15 @@ section {
 
 .cert-modal-close {
     position: absolute;
-    top: -45px;
-    right: 0;
-    background: rgba(255, 255, 255, 0.15);
-    border: none;
+    top: 14px;
+    right: 14px;
+    z-index: 2050;
+    background: rgba(15, 23, 42, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.25);
     color: #ffffff;
-    font-size: 2rem;
-    width: 40px;
-    height: 40px;
+    font-size: 1.6rem;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -880,38 +881,43 @@ section {
     justify-content: center;
     transition: var(--transition);
     line-height: 1;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .cert-modal-close:hover {
     background: #ef4444;
-    transform: rotate(90deg);
+    border-color: #ef4444;
+    transform: rotate(90deg) scale(1.05);
 }
 
 .cert-modal-nav {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(30, 41, 59, 0.8);
-    border: 1px solid var(--glass-border);
+    background: rgba(15, 23, 42, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.25);
     color: #ffffff;
-    width: 50px;
-    height: 50px;
+    width: 46px;
+    height: 46px;
     border-radius: 50%;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: var(--transition);
     backdrop-filter: blur(8px);
+    z-index: 2050;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .cert-modal-prev {
-    left: -70px;
+    left: 14px;
 }
 
 .cert-modal-next {
-    right: -70px;
+    right: 14px;
 }
 
 .cert-modal-nav:hover {
@@ -920,19 +926,8 @@ section {
     transform: translateY(-50%) scale(1.1);
 }
 
-@media (max-width: 1024px) {
-    .cert-modal-prev {
-        left: 10px;
-    }
-    .cert-modal-next {
-        right: 10px;
-    }
-    .cert-modal-close {
-        top: 10px;
-        right: 10px;
-        z-index: 2002;
-        background: rgba(0, 0, 0, 0.6);
-    }
+.card-hidden {
+    display: none !important;
 }
 
 /* Contact Section */
@@ -1281,8 +1276,8 @@ section {
     }
     
     .about-stats {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
     }
     
     .projects-grid {
@@ -1317,7 +1312,8 @@ section {
     }
     
     .about-stats {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
     
     .certification-card {
