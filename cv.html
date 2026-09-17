@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abdul Rehman - Academic & Research Curriculum Vitae</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
@@ -29,7 +32,7 @@
             align-items: center;
             padding: 0 10px;
         }
-        
+
         .btn-action {
             background: #ffffff;
             color: #4338ca;
@@ -45,9 +48,9 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
-        
+
         .btn-action:hover {
             background: #4338ca;
             color: #ffffff;
@@ -66,17 +69,17 @@
             background: linear-gradient(135deg, #4338ca, #3730a3);
             color: #ffffff;
         }
-        
+
         .cv-container {
             max-width: 900px;
             margin: 0 auto;
             background: #ffffff;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             border-radius: 12px;
             overflow: hidden;
             border: 1px solid #e2e8f0;
         }
-        
+
         .header {
             background: linear-gradient(135deg, #1e1b4b, #312e81, #4338ca);
             color: #ffffff;
@@ -84,7 +87,7 @@
             text-align: center;
             position: relative;
         }
-        
+
         .header h1 {
             font-family: 'Outfit', sans-serif;
             font-size: 2.5rem;
@@ -92,14 +95,14 @@
             font-weight: 700;
             letter-spacing: -0.5px;
         }
-        
+
         .header h2 {
             font-size: 1.15rem;
             margin-bottom: 22px;
             color: #c7d2fe;
             font-weight: 500;
         }
-        
+
         .contact-info {
             display: flex;
             justify-content: center;
@@ -108,7 +111,7 @@
             font-size: 0.92rem;
             color: #e0e7ff;
         }
-        
+
         .contact-item {
             display: flex;
             align-items: center;
@@ -124,15 +127,15 @@
         .contact-item a:hover {
             color: #fbcfe8;
         }
-        
+
         .content {
             padding: 45px 50px;
         }
-        
+
         .section {
             margin-bottom: 32px;
         }
-        
+
         .section-title {
             font-family: 'Outfit', sans-serif;
             color: #1e1b4b;
@@ -152,7 +155,7 @@
             color: #4f46e5;
             font-size: 1.1rem;
         }
-        
+
         .item-card {
             margin-bottom: 18px;
             padding: 16px 20px;
@@ -163,7 +166,7 @@
             border-right: 1px solid #f1f5f9;
             border-bottom: 1px solid #f1f5f9;
         }
-        
+
         .item-header {
             display: flex;
             justify-content: space-between;
@@ -256,33 +259,33 @@
             border: 1px solid #d8b4fe;
             margin-top: 6px;
         }
-        
+
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 16px;
         }
-        
+
         .skill-category {
             background: #f8fafc;
             padding: 16px;
             border-radius: 8px;
             border-left: 3px solid #6366f1;
         }
-        
+
         .skill-category h4 {
             color: #1e1b4b;
             font-size: 0.98rem;
             margin-bottom: 10px;
             font-weight: 700;
         }
-        
+
         .skill-list {
             list-style: none;
             font-size: 0.9rem;
             color: #475569;
         }
-        
+
         .skill-list li {
             margin-bottom: 5px;
             position: relative;
@@ -320,15 +323,17 @@
             color: #0284c7;
             font-size: 0.9rem;
         }
-        
+
         @media print {
             body {
                 background: #ffffff;
                 padding: 0;
             }
+
             .action-bar {
                 display: none !important;
             }
+
             .cv-container {
                 box-shadow: none;
                 margin: 0;
@@ -336,41 +341,50 @@
                 border-radius: 0;
                 max-width: 100%;
             }
+
             .header {
                 padding: 30px;
                 background: #1e1b4b !important;
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
             }
+
             .content {
                 padding: 30px;
             }
-            .item-card, .publication-box {
+
+            .item-card,
+            .publication-box {
                 break-inside: avoid;
             }
         }
-        
+
         @media (max-width: 768px) {
             .header {
                 padding: 30px 20px;
             }
+
             .header h1 {
                 font-size: 2rem;
             }
+
             .content {
                 padding: 30px 20px;
             }
+
             .contact-info {
                 flex-direction: column;
                 align-items: center;
                 gap: 8px;
             }
+
             .cert-list {
                 grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
+
 <body>
 
     <!-- Controls Bar -->
@@ -385,7 +399,7 @@
 
     <!-- Curriculum Vitae Document Container -->
     <div class="cv-container">
-        
+
         <!-- Header -->
         <header class="header">
             <h1>Abdul Rehman</h1>
@@ -415,16 +429,26 @@
                     <i class="fas fa-globe"></i>
                     <a href="https://rahman-dev.site" target="_blank">rahman-dev.site</a>
                 </div>
+                <div class="contact-item">
+                    <i class="fas fa-book-open"></i>
+                    <a href="https://doi.org/10.5281/zenodo.22733082" target="_blank">Zenodo Research</a>
+                </div>
             </div>
         </header>
-        
+
         <div class="content">
 
             <!-- Academic & Research Statement -->
             <section class="section">
                 <h3 class="section-title"><i class="fas fa-user-graduate"></i> Academic Profile & Research Vision</h3>
                 <p class="item-desc">
-                    Honors Computer Science graduate (<strong>3.76 / 4.00 CGPA</strong>) with demonstrated expertise spanning empirical Natural Language Processing research, full-stack mobile systems engineering, and national hackathon achievements. Primary research interests span <strong>Generative AI & Low-Resource NLP</strong>, <strong>Computer Vision & Multimodal Perception</strong>, <strong>Cybersecurity & Adversarial Machine Learning</strong>, and <strong>Distributed Cloud Architecture</strong>. Actively seeking graduate admissions (MS/PhD) and prestigious international research scholarships (Fulbright, Erasmus Mundus, DAAD, Commonwealth).
+                    Honors Computer Science graduate (<strong>3.76 / 4.00 CGPA</strong>) with demonstrated expertise
+                    spanning empirical Natural Language Processing research, full-stack mobile systems engineering, and
+                    national hackathon achievements. Author of open-access published research in intelligent NLP productivity ecosystems (<strong>Zenodo DOI: 10.5281/zenodo.22733082</strong>) and empirical low-resource adversarial NLP audits (<strong>The Urdu Cloak</strong>). Primary research interests span <strong>Generative AI &
+                        Low-Resource NLP</strong>, <strong>Computer Vision & Multimodal Perception</strong>,
+                    <strong>Cybersecurity & Adversarial Machine Learning</strong>, and <strong>Distributed Cloud
+                        Architecture</strong>. Actively seeking graduate admissions (MS/PhD) and prestigious
+                    international research scholarships (Fulbright, Erasmus Mundus, DAAD, Commonwealth).
                 </p>
             </section>
 
@@ -436,10 +460,49 @@
                         <h4>Bachelor of Science in Computer Science (BSCS)</h4>
                         <span class="item-badge">Graduated with Honors</span>
                     </div>
-                    <span class="item-sub">Government College University, Faisalabad (GCUF) &bull; CGPA: 3.76 / 4.00</span>
+                    <span class="item-sub">Government College University, Faisalabad (GCUF) &bull; CGPA: 3.76 /
+                        4.00</span>
                     <p class="item-desc">
-                        Comprehensive curriculum emphasizing advanced algorithms, artificial intelligence, operating systems, distributed database architecture, machine learning, and formal methods. Graduated in the top honors tier of the department.
+                        Comprehensive curriculum emphasizing advanced algorithms, artificial intelligence, operating
+                        systems, distributed database architecture, machine learning, and formal methods. Graduated in
+                        the top honors tier of the department.
                     </p>
+                </div>
+            </section>
+
+            <!-- Publications & Research Preprints -->
+            <section class="section">
+                <h3 class="section-title"><i class="fas fa-book-open"></i> Publications & Research Preprints</h3>
+                <div class="publication-box">
+                    <div class="publication-title">Design and Implementation of AI Planner: An Intelligent Daily Planning and Habit Tracking Framework with Speech-to-Intent NLP and Affective Analytics</div>
+                    <div class="publication-meta">
+                        <strong>Abdul Rehman (Lead Author & Researcher)</strong> &bull; Zenodo Academic Repository (CERN / OpenAIRE) &bull; September 12, 2026
+                    </div>
+                    <p class="item-desc" style="font-size: 0.9rem; margin-bottom: 8px;">
+                        Presents an end-to-end decoupled productivity ecosystem integrating speech-to-intent NLU pipelines, hierarchical goal decomposition, and longitudinal affective analytics evaluating correlations between daily mood levels, energy scores (1–5), and habit sustainability over rolling temporal windows.
+                    </p>
+                    <div class="doi-tag">
+                        <i class="fas fa-link"></i> DOI: <a href="https://doi.org/10.5281/zenodo.22733082" target="_blank" style="color: #6b21a8; text-decoration: none; font-weight: 600;">10.5281/zenodo.22733082</a>
+                    </div>
+                    <div class="item-links" style="margin-top: 10px;">
+                        <a href="https://doi.org/10.5281/zenodo.22733082" target="_blank"><i class="fas fa-external-link-alt"></i> View on Zenodo (Open Access)</a>
+                        <a href="https://github.com/mani828282/AI-Powered-Daily-Planner-and-Habit-Tracker" target="_blank"><i class="fab fa-github"></i> System Codebase</a>
+                        <a href="https://github.com/mani828282/portfolio/releases/download/v1.1/app-release.apk" target="_blank"><i class="fas fa-download"></i> Production APK</a>
+                    </div>
+                </div>
+
+                <div class="publication-box" style="background: #fdf4ff; border-left-color: #a855f7;">
+                    <div class="publication-title" style="color: #6b21a8;">The Urdu Cloak: Empirical Cross-Lingual Vulnerability & Adversarial NLP Audit</div>
+                    <div class="publication-meta" style="color: #7e22ce;">
+                        <strong>Abdul Rehman (Lead Author & Researcher)</strong> &bull; Adversarial NLP & Low-Resource Language Security
+                    </div>
+                    <p class="item-desc" style="font-size: 0.9rem; margin-bottom: 8px;">
+                        Empirical socio-technical audit framework formulating a Two-Layer Evasion Vulnerability against commercial AI content detectors via cross-lingual back-translation and token perplexity perturbation in Urdu.
+                    </p>
+                    <div class="item-links" style="margin-top: 8px;">
+                        <a href="The_Urdu_Cloak.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Read Research Paper (PDF)</a>
+                        <a href="https://github.com/mani828282/urdu-cloak" target="_blank"><i class="fab fa-github"></i> Research Codebase</a>
+                    </div>
                 </div>
             </section>
 
@@ -447,15 +510,18 @@
             <!-- Hackathons & Technical Competitions -->
             <section class="section">
                 <h3 class="section-title"><i class="fas fa-trophy"></i> Hackathons & Technical Competitions</h3>
-                
+
                 <div class="item-card">
                     <div class="item-header">
                         <h4>AI Seekho: Google Antigravity National Hackathon 2026</h4>
                         <span class="item-badge">Google for Developers</span>
                     </div>
-                    <span class="item-sub">Organized by Google for Developers, Ministry of IT & Telecom, Innovista, Telenor 4G</span>
+                    <span class="item-sub">Organized by Google for Developers, Ministry of IT & Telecom, Innovista,
+                        Telenor 4G</span>
                     <p class="item-desc">
-                        Selected to enter the national hackathon arena for AI orchestration and rapid vibe coding. Engineered multi-agent AI workflows and rapid prototype systems under strict timed hackathon constraints.
+                        Selected to enter the national hackathon arena for AI orchestration and rapid vibe coding.
+                        Engineered multi-agent AI workflows and rapid prototype systems under strict timed hackathon
+                        constraints.
                     </p>
                 </div>
 
@@ -464,9 +530,12 @@
                         <h4>World Startup Championship 2025 &bull; SEE Pakistan</h4>
                         <span class="item-badge">Top 100 in Pakistan</span>
                     </div>
-                    <span class="item-sub">CMACED &bull; SEE Pakistan &bull; Association of Private Sector Universities (APSUP)</span>
+                    <span class="item-sub">CMACED &bull; SEE Pakistan &bull; Association of Private Sector Universities
+                        (APSUP)</span>
                     <p class="item-desc">
-                        Technical Founder for <strong>REPLAI</strong>. Shortlisted into the elite <strong>Top 100 Startups in Pakistan</strong> nationwide out of hundreds of entries. Completed intensive national startup bootcamps and pitched live before venture capitalists and academic evaluators.
+                        Technical Founder for <strong>REPLAI</strong>. Shortlisted into the elite <strong>Top 100
+                            Startups in Pakistan</strong> nationwide out of hundreds of entries. Completed intensive
+                        national startup bootcamps and pitched live before venture capitalists and academic evaluators.
                     </p>
                 </div>
 
@@ -475,9 +544,12 @@
                         <h4>UNESCO International Hackathon</h4>
                         <span class="item-badge">UNESCO Initiative</span>
                     </div>
-                    <span class="item-sub">United Nations Educational, Scientific and Cultural Organization (UNESCO)</span>
+                    <span class="item-sub">United Nations Educational, Scientific and Cultural Organization
+                        (UNESCO)</span>
                     <p class="item-desc">
-                        Participated in the competitive international hackathon organized under UNESCO initiatives. Collaborated on developing sustainable social-impact technology prototypes, addressing digital inclusion and global challenges.
+                        Participated in the competitive international hackathon organized under UNESCO initiatives.
+                        Collaborated on developing sustainable social-impact technology prototypes, addressing digital
+                        inclusion and global challenges.
                     </p>
                 </div>
             </section>
@@ -492,25 +564,48 @@
                     </div>
                     <span class="item-sub">WOWBLY Technologies &bull; Faisalabad, Pakistan</span>
                     <p class="item-desc">
-                        Contributed to the development and maintenance of high-performance web applications. Engineered automation workflows using n8n and Python to eliminate operational bottlenecks. Implemented backend APIs and database operations in an agile team setting.
+                        Contributed to the development and maintenance of high-performance web applications. Engineered
+                        automation workflows using n8n and Python to eliminate operational bottlenecks. Implemented
+                        backend APIs and database operations in an agile team setting.
                     </p>
                 </div>
             </section>
 
             <!-- Key Engineered Projects -->
             <section class="section">
-                <h3 class="section-title"><i class="fas fa-code-branch"></i> Flagship Engineering & Research Projects</h3>
+                <h3 class="section-title"><i class="fas fa-code-branch"></i> Flagship Engineering & Research Projects
+                </h3>
+                <div class="item-card">
+                    <div class="item-header">
+                        <h4>AI Daily Planner & Habit Tracker &bull; Intelligent Productivity Framework</h4>
+                        <span class="item-badge">Flutter &bull; FastAPI &bull; Speech NLP &bull; DOI Indexed</span>
+                    </div>
+                    <p class="item-desc">
+                        Full-stack decoupled productivity ecosystem incorporating speech-to-intent natural language understanding, automated hierarchical goal decomposition, and affective correlation analytics linking daily mood, energy (1–5), and habit sustainability. Backed by published research paper on Zenodo (DOI: 10.5281/zenodo.22733082).
+                    </p>
+                    <div class="item-links">
+                        <a href="https://doi.org/10.5281/zenodo.22733082" target="_blank"><i class="fas fa-book-open"></i> Zenodo Research Paper (DOI)</a>
+                        <a href="https://github.com/mani828282/AI-Powered-Daily-Planner-and-Habit-Tracker" target="_blank"><i class="fab fa-github"></i> GitHub Codebase</a>
+                        <a href="https://github.com/mani828282/portfolio/releases/download/v1.1/app-release.apk"><i class="fas fa-download"></i> Production APK</a>
+                    </div>
+                </div>
+
                 <div class="item-card">
                     <div class="item-header">
                         <h4>The Urdu Cloak &bull; NLP Research Project</h4>
                         <span class="item-badge">Research Project &bull; NLP Safety &bull; Python</span>
                     </div>
                     <p class="item-desc">
-                        Empirical socio-technical audit framework & adversarial NLP codebase analyzing cross-lingual back-translation, token perplexity, and AI detection evasion for Urdu (spoken by over 230M people). Formulated a Two-Layer Evasion Vulnerability against state-of-the-art plagiarism and AI detectors.
+                        Empirical socio-technical audit framework & adversarial NLP codebase analyzing cross-lingual
+                        back-translation, token perplexity, and AI detection evasion for Urdu (spoken by over 230M
+                        people). Formulated a Two-Layer Evasion Vulnerability against state-of-the-art plagiarism and AI
+                        detectors.
                     </p>
                     <div class="item-links">
-                        <a href="https://github.com/mani828282/urdu-cloak" target="_blank"><i class="fab fa-github"></i> GitHub Codebase</a>
-                        <a href="The_Urdu_Cloak.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Research Paper (PDF)</a>
+                        <a href="https://github.com/mani828282/urdu-cloak" target="_blank"><i class="fab fa-github"></i>
+                            GitHub Codebase</a>
+                        <a href="The_Urdu_Cloak.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Research Paper
+                            (PDF)</a>
                     </div>
                 </div>
 
@@ -520,11 +615,14 @@
                         <span class="item-badge">Flutter &bull; Firebase &bull; LLM</span>
                     </div>
                     <p class="item-desc">
-                        AI-powered legal advisory platform designed to simplify civic access to statutory legal codes. Features conversational AI guidance, case analysis, and document summaries.
+                        AI-powered legal advisory platform designed to simplify civic access to statutory legal codes.
+                        Features conversational AI guidance, case analysis, and document summaries.
                     </p>
                     <div class="item-links">
-                        <a href="https://github.com/mani828282/Insaf_AI" target="_blank"><i class="fab fa-github"></i> GitHub Code</a>
-                        <a href="https://github.com/mani828282/portfolio/releases/download/v1.2/Insaf.AI.apk"><i class="fas fa-download"></i> Download APK</a>
+                        <a href="https://github.com/mani828282/Insaf_AI" target="_blank"><i class="fab fa-github"></i>
+                            GitHub Code</a>
+                        <a href="https://github.com/mani828282/portfolio/releases/download/v1.2/Insaf.AI.apk"><i
+                                class="fas fa-download"></i> Download APK</a>
                     </div>
                 </div>
 
@@ -534,11 +632,14 @@
                         <span class="item-badge">Computer Vision &bull; Flutter &bull; FastAPI</span>
                     </div>
                     <p class="item-desc">
-                        Non-invasive diagnostic mobile app and web ecosystem using computer vision models to assess distress and pain indicators in domestic animals.
+                        Non-invasive diagnostic mobile app and web ecosystem using computer vision models to assess
+                        distress and pain indicators in domestic animals.
                     </p>
                     <div class="item-links">
-                        <a href="https://github.com/mani828282/PetScan-AI" target="_blank"><i class="fab fa-github"></i> App Repository</a>
-                        <a href="https://pet-scan.live/" target="_blank"><i class="fas fa-globe"></i> Live Web Platform</a>
+                        <a href="https://github.com/mani828282/PetScan-AI" target="_blank"><i class="fab fa-github"></i>
+                            App Repository</a>
+                        <a href="https://pet-scan.live/" target="_blank"><i class="fas fa-globe"></i> Live Web
+                            Platform</a>
                     </div>
                 </div>
 
@@ -548,10 +649,12 @@
                         <span class="item-badge">Dart &bull; Flutter &bull; AI Integrity</span>
                     </div>
                     <p class="item-desc">
-                        Verification engine designed to inspect multi-modal media anomalies, detecting synthetically generated video/imagery to ensure content authenticity.
+                        Verification engine designed to inspect multi-modal media anomalies, detecting synthetically
+                        generated video/imagery to ensure content authenticity.
                     </p>
                     <div class="item-links">
-                        <a href="https://github.com/mani828282/TruthGrid-AI" target="_blank"><i class="fab fa-github"></i> GitHub Repository</a>
+                        <a href="https://github.com/mani828282/TruthGrid-AI" target="_blank"><i
+                                class="fab fa-github"></i> GitHub Repository</a>
                     </div>
                 </div>
 
@@ -561,10 +664,12 @@
                         <span class="item-badge">PHP &bull; MySQL &bull; Healthcare</span>
                     </div>
                     <p class="item-desc">
-                        Advanced psychometric evaluation system engineered for structured psychiatric assessments, scoring analytics, and clinical report generation.
+                        Advanced psychometric evaluation system engineered for structured psychiatric assessments,
+                        scoring analytics, and clinical report generation.
                     </p>
                     <div class="item-links">
-                        <a href="https://www.managerialquotient.com" target="_blank"><i class="fas fa-globe"></i> www.managerialquotient.com</a>
+                        <a href="https://www.managerialquotient.com" target="_blank"><i class="fas fa-globe"></i>
+                            www.managerialquotient.com</a>
                     </div>
                 </div>
             </section>
@@ -613,23 +718,40 @@
             <section class="section">
                 <h3 class="section-title"><i class="fas fa-certificate"></i> Verified Certifications & Honors</h3>
                 <div class="cert-list">
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> Foundations of Cybersecurity (Google via Coursera)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> Google Antigravity National Hackathon (Google for Developers)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> World Startups Championship 2025 - Top 100 Startup (SEE Pakistan)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> 6-Month Software Development Certificate (WOWBLY Technologies)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> IEEE Congress Participation (IEEE Pakistan Section)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> IEEE Ethical Hacking & Security Workshop (IEEE Student Branch)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> Ethics of Artificial Intelligence (Coursera)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> Crash Course in Python (Google via Coursera)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> Technical Support Fundamentals (Google via Coursera)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> Foundations: Data Analytics (Google Data Specialization)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> Advancing the Digital Economy (Asian Development Bank Institute)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> Climate Change and Sovereign Risk (Asian Development Bank Institute)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> Green Investments in Renewable Energy (ADB Institute)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> Introduction to Peacebuilding (US Institute of Peace)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> Fundamentals of Digital Marketing (Google Digital Garage)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> Digital Marketing & Freelancing (DigiSkills Pakistan)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> Social Media & Business Communications (HP LIFE)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> Foundations of Cybersecurity (Google via
+                        Coursera)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> Google Antigravity National Hackathon
+                        (Google for Developers)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> World Startups Championship 2025 - Top
+                        100 Startup (SEE Pakistan)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> 6-Month Software Development Certificate
+                        (WOWBLY Technologies)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> IEEE Congress Participation (IEEE
+                        Pakistan Section)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> IEEE Ethical Hacking & Security Workshop
+                        (IEEE Student Branch)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> Ethics of Artificial Intelligence
+                        (Coursera)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> Crash Course in Python (Google via
+                        Coursera)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> Technical Support Fundamentals (Google
+                        via Coursera)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> Foundations: Data Analytics (Google Data
+                        Specialization)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> Advancing the Digital Economy (Asian
+                        Development Bank Institute)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> Climate Change and Sovereign Risk (Asian
+                        Development Bank Institute)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> Green Investments in Renewable Energy
+                        (ADB Institute)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> Introduction to Peacebuilding (US
+                        Institute of Peace)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> Fundamentals of Digital Marketing (Google
+                        Digital Garage)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> Digital Marketing & Freelancing
+                        (DigiSkills Pakistan)</div>
+                    <div class="cert-item"><i class="fas fa-check-circle"></i> Social Media & Business Communications
+                        (HP LIFE)</div>
                 </div>
             </section>
 
@@ -637,4 +759,5 @@
     </div>
 
 </body>
+
 </html>
