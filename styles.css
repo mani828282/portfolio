@@ -1537,11 +1537,37 @@ section {
 .doi-pill {
     font-size: 0.85rem;
     font-family: monospace;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.45);
     color: var(--secondary);
     padding: 6px 14px;
     border-radius: 50px;
-    border: 1px solid rgba(56, 189, 248, 0.3);
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.doi-pill:hover {
+    background: rgba(56, 189, 248, 0.18);
+    border-color: var(--secondary);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(56, 189, 248, 0.25);
+}
+
+.btn-doi {
+    background: linear-gradient(135deg, #0284c7, #0369a1);
+    color: #ffffff !important;
+    border: 1px solid rgba(56, 189, 248, 0.4);
+}
+
+.btn-doi:hover {
+    background: linear-gradient(135deg, #0ea5e9, #0284c7);
+    color: #ffffff !important;
+    box-shadow: 0 10px 25px rgba(2, 132, 199, 0.45);
+    transform: translateY(-2px);
 }
 
 .paper-title {
