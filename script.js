@@ -52,15 +52,34 @@ if (hamburger) {
         
         // Animate hamburger bars
         const bars = document.querySelectorAll('.bar');
-        if (hamburger.classList.contains('active')) {
-            bars[0].style.transform = 'rotate(-45deg) translate(-5px, 6px)';
-            bars[1].style.opacity = '0';
-            bars[2].style.transform = 'rotate(45deg) translate(-5px, -6px)';
-        } else {
-            bars[0].style.transform = 'none';
-            bars[1].style.opacity = '1';
-            bars[2].style.transform = 'none';
+        if (bars.length >= 3) {
+            if (hamburger.classList.contains('active')) {
+                bars[0].style.transform = 'rotate(-45deg) translate(-5px, 6px)';
+                bars[1].style.opacity = '0';
+                bars[2].style.transform = 'rotate(45deg) translate(-5px, -6px)';
+            } else {
+                bars[0].style.transform = 'none';
+                bars[1].style.opacity = '1';
+                bars[2].style.transform = 'none';
+            }
         }
+    });
+
+    // Close mobile menu when clicking any nav link
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (hamburger.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                const bars = document.querySelectorAll('.bar');
+                if (bars.length >= 3) {
+                    bars[0].style.transform = 'none';
+                    bars[1].style.opacity = '1';
+                    bars[2].style.transform = 'none';
+                }
+            }
+        });
     });
 }
 
@@ -126,7 +145,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Filter Logic
     if (filterBtns.length > 0) {
         filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
                 filterBtns.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
 
@@ -136,18 +156,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 certCards.forEach(card => {
                     const category = card.getAttribute('data-category');
                     if (filter === 'all' || category === filter) {
+                        card.classList.remove('card-hidden');
                         card.style.display = 'flex';
-                        card.style.opacity = '1';
-                        card.style.transform = 'translateY(0)';
                         currentVisibleCards.push(card);
                     } else {
-                        card.style.opacity = '0';
-                        card.style.transform = 'scale(0.9)';
-                        setTimeout(() => {
-                            if (card.style.opacity === '0') {
-                                card.style.display = 'none';
-                            }
-                        }, 300);
+                        card.classList.add('card-hidden');
+                        card.style.display = 'none';
                     }
                 });
             });
@@ -249,6 +263,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (certModalClose) certModalClose.addEventListener('click', closeCertModal);
     if (certModalBackdrop) certModalBackdrop.addEventListener('click', closeCertModal);
+
+    // Close when clicking backdrop or container outside modal content
+    if (certModal) {
+        certModal.addEventListener('click', (e) => {
+            if (e.target === certModal || e.target === certModalBackdrop || e.target.classList.contains('cert-modal-container')) {
+                closeCertModal();
+            }
+        });
+    }
+
+    const certModalContent = document.querySelector('.cert-modal-content');
+    if (certModalContent) {
+        certModalContent.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+    }
 
     if (certModalPrev) {
         certModalPrev.addEventListener('click', (e) => {
