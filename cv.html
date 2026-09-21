@@ -324,6 +324,147 @@
             font-size: 0.9rem;
         }
 
+        .cv-bullet-list {
+            margin: 8px 0 0 0;
+            padding-left: 20px;
+            font-size: 0.92rem;
+            color: #475569;
+            line-height: 1.65;
+        }
+
+        .cv-bullet-list li {
+            margin-bottom: 6px;
+        }
+
+        .cv-bullet-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .cv-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 10px;
+        }
+
+        .cv-tag {
+            display: inline-block;
+            font-size: 0.76rem;
+            font-weight: 600;
+            padding: 2px 9px;
+            border-radius: 4px;
+            background: #f1f5f9;
+            color: #475569;
+            border: 1px solid #e2e8f0;
+            letter-spacing: 0.2px;
+        }
+
+        .interest-card {
+            background: #f8fafc;
+            border-left: 4px solid #3b82f6;
+            padding: 14px 18px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 12px;
+            border-top: 1px solid #f1f5f9;
+            border-right: 1px solid #f1f5f9;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .interest-row {
+            margin-bottom: 8px;
+            font-size: 0.92rem;
+            color: #334155;
+            line-height: 1.6;
+        }
+
+        .interest-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .interest-label {
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        .referees-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 16px;
+        }
+
+        .referee-card {
+            background: #f8fafc;
+            border-left: 4px solid #4f46e5;
+            padding: 16px 18px;
+            border-radius: 0 8px 8px 0;
+            border-top: 1px solid #f1f5f9;
+            border-right: 1px solid #f1f5f9;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .referee-name {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 4px;
+        }
+
+        .referee-title {
+            font-size: 0.9rem;
+            color: #4338ca;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+
+        .referee-inst {
+            font-size: 0.86rem;
+            color: #64748b;
+            margin-bottom: 8px;
+        }
+
+        .referee-email a {
+            color: #4f46e5;
+            font-size: 0.88rem;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .referee-email a:hover {
+            text-decoration: underline;
+        }
+
+        .lang-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 14px;
+        }
+
+        .lang-card {
+            background: #f8fafc;
+            padding: 14px 18px;
+            border-radius: 0 8px 8px 0;
+            border-left: 4px solid #10b981;
+            border-top: 1px solid #f1f5f9;
+            border-right: 1px solid #f1f5f9;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .lang-title {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #065f46;
+            margin-bottom: 4px;
+        }
+
+        .lang-desc {
+            font-size: 0.9rem;
+            color: #475569;
+            line-height: 1.55;
+        }
+
         @media print {
             body {
                 background: #ffffff;
@@ -354,7 +495,11 @@
             }
 
             .item-card,
-            .publication-box {
+            .publication-box,
+            .referee-card,
+            .interest-card,
+            .lang-card,
+            .skill-category {
                 break-inside: avoid;
             }
         }
@@ -403,54 +548,72 @@
         <!-- Header -->
         <header class="header">
             <h1>Abdul Rehman</h1>
-            <h2>Computer Scientist & AI Researcher &bull; Aspiring Graduate Scholar</h2>
+            <h2>Computer Science Graduate</h2>
             <div class="contact-info">
                 <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:maharabdulrehman5@gmail.com">maharabdulrehman5@gmail.com</a>
+                    <i class="fas fa-passport"></i>
+                    <span>Citizenship: Pakistani</span>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-phone"></i>
                     <span>+92 303 7197825</span>
                 </div>
                 <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Faisalabad, Pakistan</span>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:maharabdulrehman5@gmail.com">maharabdulrehman5@gmail.com</a>
                 </div>
                 <div class="contact-item">
                     <i class="fab fa-linkedin"></i>
-                    <a href="https://www.linkedin.com/in/abdul-rehman-539306171/" target="_blank">LinkedIn</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <a href="https://github.com/mani828282" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/abdul-rehman-539306171/" target="_blank">abdul-rehman-539306171</a>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-globe"></i>
-                    <a href="https://rahman-dev.site" target="_blank">rahman-dev.site</a>
+                    <a href="https://rehmandev.me" target="_blank">rehmandev.me</a>
                 </div>
                 <div class="contact-item">
-                    <i class="fas fa-book-open"></i>
-                    <a href="https://doi.org/10.5281/zenodo.22733082" target="_blank">Zenodo Research</a>
+                    <i class="fas fa-brain"></i>
+                    <a href="https://huggingface.co/Rehman82" target="_blank">huggingface.co/Rehman82</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/mani828282" target="_blank">github.com/mani828282</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Location: Sahiwal, Pakistan</span>
                 </div>
             </div>
         </header>
 
         <div class="content">
 
-            <!-- Academic & Research Statement -->
+            <!-- Academic Profile -->
             <section class="section">
-                <h3 class="section-title"><i class="fas fa-user-graduate"></i> Academic Profile & Research Vision</h3>
-                <p class="item-desc">
-                    Honors Computer Science graduate (<strong>3.76 / 4.00 CGPA</strong>) with demonstrated expertise
-                    spanning empirical Natural Language Processing research, full-stack mobile systems engineering,
-                    prestigious global leadership fellowship (<strong>Aspire Leaders Program &bull; Aspire Institute</strong>, founded at Harvard University), and
-                    national hackathon achievements. Author of open-access published research in intelligent NLP productivity ecosystems (<strong>Zenodo DOI: 10.5281/zenodo.22733082</strong>) and cyber-physical verification frameworks for multimodal Generative AI literacy (<strong>TruthGrid-AI on Zenodo, DOI: 10.5281/zenodo.22869929</strong>). Primary research interests span <strong>Generative AI &
-                        Low-Resource NLP</strong>, <strong>Computer Vision & Multimodal Perception</strong>,
-                    <strong>Cybersecurity & Adversarial Machine Learning</strong>, and <strong>Distributed Cloud
-                        Architecture</strong>. Actively seeking graduate admissions (MS/PhD) and prestigious
-                    international research scholarships (Fulbright, Erasmus Mundus, DAAD, Commonwealth).
-                </p>
+                <h3 class="section-title"><i class="fas fa-user-graduate"></i> Academic Profile</h3>
+                <div class="item-card" style="border-left-color: #4f46e5;">
+                    <span class="item-sub" style="color: #1e1b4b; font-size: 0.98rem; margin-bottom: 6px;">Academic Summary</span>
+                    <p class="item-desc">
+                        Computer Science graduate from Government College University, Faisalabad (CGPA 3.76/4.00) with
+                        research and engineering experience in Machine Learning, Natural Language Processing, and AI-powered
+                        software systems. Authored two open-access research preprints on Zenodo and developed
+                        production-oriented AI applications spanning NLP, computer vision, intelligent automation, and
+                        multilingual AI. Interested in graduate research focused on machine learning, low-resource NLP, and
+                        reliable AI systems.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Primary Research Interests -->
+            <section class="section">
+                <h3 class="section-title"><i class="fas fa-microscope"></i> Primary Research Interests</h3>
+                <div class="interest-card">
+                    <div class="interest-row">
+                        <span class="interest-label">Primary Interests:</span> Machine Learning &bull; Natural Language Processing &bull; Low-Resource & Multilingual AI &bull; Reliable AI Systems
+                    </div>
+                    <div class="interest-row">
+                        <span class="interest-label">Focus Areas:</span> Cross-lingual representation transfer, speech-to-intent NLU, adversarial robustness and detection auditing, and trustworthy AI systems.
+                    </div>
+                </div>
             </section>
 
             <!-- Education -->
@@ -458,287 +621,440 @@
                 <h3 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h3>
                 <div class="item-card">
                     <div class="item-header">
-                        <h4>Bachelor of Science in Computer Science (BSCS)</h4>
-                        <span class="item-badge">Graduated with Honors</span>
+                        <h4>BS Computer Science</h4>
+                        <span class="item-badge">2026 &bull; Faisalabad, Pakistan</span>
                     </div>
-                    <span class="item-sub">Government College University, Faisalabad (GCUF) &bull; CGPA: 3.76 /
-                        4.00</span>
-                    <p class="item-desc">
-                        Comprehensive curriculum emphasizing advanced algorithms, artificial intelligence, operating
-                        systems, distributed database architecture, machine learning, and formal methods. Graduated in
-                        the top honors tier of the department.
-                    </p>
+                    <span class="item-sub">Government College University, Faisalabad (GCUF), Pakistan &bull; <a href="https://gcuf.edu.pk" target="_blank" style="color: #4338ca; text-decoration: none;"><i class="fas fa-external-link-alt" style="font-size: 0.78rem;"></i> gcuf.edu.pk</a></span>
+                    <div style="font-size: 0.92rem; font-weight: 700; color: #0f172a; margin-bottom: 8px;">
+                        Academic Standing: Cumulative GPA: 3.76 / 4.00 (Honors)
+                    </div>
+                    <ul class="cv-bullet-list">
+                        <li><strong>Relevant Coursework:</strong> Data Structures & Algorithms, Analysis of Algorithms, Machine Learning, Artificial Intelligence, Natural Language Processing, Digital Image Processing, Data Mining, Parallel & Distributed Computing, Cloud Computing, Advanced DBMS, Operating Systems.</li>
+                        <li><strong>Capstone Project:</strong> AI Planner — Cross-platform intelligent planning and habit-tracking application incorporating speech-to-intent NLP and affective analytics.</li>
+                    </ul>
                 </div>
             </section>
 
-            <!-- Publications & Research Preprints -->
+            <!-- Research Preprints -->
             <section class="section">
-                <h3 class="section-title"><i class="fas fa-book-open"></i> Publications & Research Preprints</h3>
+                <h3 class="section-title"><i class="fas fa-file-alt"></i> Research Preprints</h3>
+
+                <!-- 1. AI Planner Preprint -->
                 <div class="publication-box">
+                    <div class="item-header" style="margin-bottom: 4px;">
+                        <span style="font-size: 0.82rem; font-weight: 700; color: #6b21a8; text-transform: uppercase; letter-spacing: 0.5px;">
+                            September 2026 &bull; Open-Access Preprint &bull; Zenodo Repository
+                        </span>
+                    </div>
                     <div class="publication-title">Design and Implementation of AI Planner: An Intelligent Daily Planning and Habit Tracking Framework with Speech-to-Intent NLP and Affective Analytics</div>
                     <div class="publication-meta">
-                        <strong>Abdul Rehman (Lead Author & Researcher)</strong> &bull; Zenodo Academic Repository (CERN / OpenAIRE) &bull; September 12, 2026
+                        Zenodo &bull; DOI: <a href="https://doi.org/10.5281/zenodo.22733082" target="_blank" style="color: #6b21a8; font-weight: 700;">10.5281/zenodo.22733082</a> &bull; <a href="https://github.com/mani828282/AI-Powered-Daily-Planner-and-Habit-Tracker" target="_blank" style="color: #4338ca; font-weight: 600;"><i class="fab fa-github"></i> Code</a>
                     </div>
-                    <p class="item-desc" style="font-size: 0.9rem; margin-bottom: 8px;">
-                        Presents an end-to-end decoupled productivity ecosystem integrating speech-to-intent NLU pipelines, hierarchical goal decomposition, and longitudinal affective analytics evaluating correlations between daily mood levels, energy scores (1–5), and habit sustainability over rolling temporal windows.
-                    </p>
-                    <div class="doi-tag">
-                        <i class="fas fa-link"></i> DOI: <a href="https://doi.org/10.5281/zenodo.22733082" target="_blank" style="color: #6b21a8; text-decoration: none; font-weight: 600;">10.5281/zenodo.22733082</a>
+                    <div style="font-size: 0.88rem; font-weight: 700; color: #1e1b4b; margin-bottom: 8px;">
+                        Author: Abdul Rehman (Single-author preprint)
                     </div>
-                    <div class="item-links" style="margin-top: 10px;">
+                    <ul class="cv-bullet-list" style="margin-bottom: 10px;">
+                        <li><strong>Methodology & Pipeline:</strong> Engineered a hands-free speech-to-intent pipeline extracting task priorities and constraints from spoken input, with automated hierarchical goal decomposition into chronological milestones.</li>
+                        <li><strong>Affective Analytics & Architecture:</strong> Developed a statistical analytics engine correlating longitudinal mood and energy scores (1–5 Likert scale) with habit completion rates; evaluated system performance on a decoupled three-tier architecture (Flutter, FastAPI, MySQL).</li>
+                    </ul>
+                    <div class="cv-tags">
+                        <span class="cv-tag">Speech-to-Intent NLP</span>
+                        <span class="cv-tag">NLU</span>
+                        <span class="cv-tag">Affective Analytics</span>
+                        <span class="cv-tag">Goal Decomposition</span>
+                        <span class="cv-tag">FastAPI</span>
+                        <span class="cv-tag">Flutter</span>
+                    </div>
+                    <div class="item-links" style="margin-top: 12px;">
                         <a href="https://doi.org/10.5281/zenodo.22733082" target="_blank"><i class="fas fa-external-link-alt"></i> View on Zenodo (Open Access)</a>
                         <a href="https://github.com/mani828282/AI-Powered-Daily-Planner-and-Habit-Tracker" target="_blank"><i class="fab fa-github"></i> System Codebase</a>
                         <a href="https://github.com/mani828282/portfolio/releases/download/v1.1/app-release.apk" target="_blank"><i class="fas fa-download"></i> Production APK</a>
                     </div>
                 </div>
 
+                <!-- 2. TruthGrid-AI Preprint -->
                 <div class="publication-box" style="background: #fdf4ff; border-left-color: #a855f7;">
+                    <div class="item-header" style="margin-bottom: 4px;">
+                        <span style="font-size: 0.82rem; font-weight: 700; color: #7e22ce; text-transform: uppercase; letter-spacing: 0.5px;">
+                            June 2026 &bull; Open-Access Preprint &bull; Zenodo Repository
+                        </span>
+                    </div>
                     <div class="publication-title" style="color: #6b21a8;">TruthGrid-AI: A Cyber-Physical Verification Framework for Multimodal Generative AI Literacy in Resource-Constrained Environments</div>
                     <div class="publication-meta" style="color: #7e22ce;">
-                        <strong>Abdul Rehman (Lead Author & Researcher)</strong> &bull; Zenodo Academic Repository (CERN / OpenAIRE) &bull; June 21, 2026
+                        Zenodo &bull; DOI: <a href="https://doi.org/10.5281/zenodo.22869929" target="_blank" style="color: #7e22ce; font-weight: 700;">10.5281/zenodo.22869929</a> &bull; <a href="https://github.com/mani828282/TruthGrid-AI" target="_blank" style="color: #6b21a8; font-weight: 600;"><i class="fab fa-github"></i> Code</a>
                     </div>
-                    <p class="item-desc" style="font-size: 0.9rem; margin-bottom: 8px;">
-                        Open-source, hybrid cyber-physical verification framework operationalizing psychological inoculation theory (prebunking) to cultivate cognitive resilience and forensic verification reflexes against multimodal synthetic media (deepfakes, voice cloning, synthetic news). Integrates Socratic dialectic AI mentoring on Groq LPUs executing Meta Llama-3.3-70B across low-resource constraints aligned with UNESCO MIL curricula.
-                    </p>
-                    <div class="doi-tag">
-                        <i class="fas fa-link"></i> DOI: <a href="https://doi.org/10.5281/zenodo.22869929" target="_blank" style="color: #6b21a8; text-decoration: none; font-weight: 600;">10.5281/zenodo.22869929</a>
+                    <div style="font-size: 0.88rem; font-weight: 700; color: #4c1d95; margin-bottom: 8px;">
+                        Author: Abdul Rehman (Lead Author & Researcher)
                     </div>
-                    <div class="item-links" style="margin-top: 10px;">
+                    <ul class="cv-bullet-list" style="margin-bottom: 10px;">
+                        <li><strong>Prebunking & Verification Framework:</strong> Operationalized psychological inoculation theory (prebunking) through an open-source, hybrid cyber-physical framework designed to foster cognitive resilience and forensic verification reflexes against multimodal synthetic media.</li>
+                        <li><strong>Edge AI & Multimodal Pipeline:</strong> Engineered a tangible tabletop interaction paradigm paired with asynchronous mobile access and edge inference via Groq LPUs executing Meta Llama-3.3-70B across five multimodal deception vectors, aligned with UNESCO MIL guidelines.</li>
+                    </ul>
+                    <div class="cv-tags">
+                        <span class="cv-tag">GenAI Literacy</span>
+                        <span class="cv-tag">Cyber-Physical Systems</span>
+                        <span class="cv-tag">Deepfake Detection</span>
+                        <span class="cv-tag">Groq LPUs</span>
+                        <span class="cv-tag">Llama-3.3-70B</span>
+                    </div>
+                    <div class="item-links" style="margin-top: 12px;">
                         <a href="https://doi.org/10.5281/zenodo.22869929" target="_blank"><i class="fas fa-external-link-alt"></i> View on Zenodo (Open Access)</a>
-                        <a href="TruthGrid_Paper.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Read Research Paper (PDF)</a>
+                        <a href="TruthGrid_Paper.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Read Research Preprint (PDF)</a>
                         <a href="https://github.com/mani828282/TruthGrid-AI" target="_blank"><i class="fab fa-github"></i> Research Codebase</a>
                     </div>
                 </div>
             </section>
 
-
-            <!-- Hackathons & Technical Competitions -->
+            <!-- Selected AI & Software Projects -->
             <section class="section">
-                <h3 class="section-title"><i class="fas fa-trophy"></i> Hackathons & Technical Competitions</h3>
+                <h3 class="section-title"><i class="fas fa-code-branch"></i> Selected AI & Software Projects</h3>
 
+                <!-- 1. AI Planner -->
                 <div class="item-card">
                     <div class="item-header">
-                        <h4>AI Seekho: Google Antigravity National Hackathon 2026</h4>
-                        <span class="item-badge">Google for Developers</span>
+                        <h4>AI Planner — Intelligent Planning & Habit Tracking</h4>
+                        <span class="item-badge">Applied NLP & Mobile</span>
                     </div>
-                    <span class="item-sub">Organized by Google for Developers, Ministry of IT & Telecom, Innovista,
-                        Telenor 4G</span>
-                    <p class="item-desc">
-                        Selected to enter the national hackathon arena for AI orchestration and rapid vibe coding.
-                        Engineered multi-agent AI workflows and rapid prototype systems under strict timed hackathon
-                        constraints.
-                    </p>
-                </div>
-
-                <div class="item-card">
-                    <div class="item-header">
-                        <h4>World Startup Championship 2025 &bull; SEE Pakistan</h4>
-                        <span class="item-badge">Top 100 in Pakistan</span>
+                    <span class="item-sub">Flutter &bull; FastAPI &bull; MySQL &bull; Speech-to-Intent NLP &bull; Preprint &bull; GitHub</span>
+                    <ul class="cv-bullet-list">
+                        <li>Developed a cross-platform AI planning application integrating speech-to-intent task capture, hierarchical task decomposition, and longitudinal mood/energy analytics. The system formed the empirical basis for a corresponding research preprint.</li>
+                    </ul>
+                    <div class="cv-tags">
+                        <span class="cv-tag">Flutter</span>
+                        <span class="cv-tag">FastAPI</span>
+                        <span class="cv-tag">MySQL</span>
+                        <span class="cv-tag">Speech-to-Intent NLP</span>
                     </div>
-                    <span class="item-sub">CMACED &bull; SEE Pakistan &bull; Association of Private Sector Universities
-                        (APSUP)</span>
-                    <p class="item-desc">
-                        Technical Founder for <strong>REPLAI</strong>. Shortlisted into the elite <strong>Top 100
-                            Startups in Pakistan</strong> nationwide out of hundreds of entries. Completed intensive
-                        national startup bootcamps and pitched live before venture capitalists and academic evaluators.
-                    </p>
-                </div>
-
-                <div class="item-card">
-                    <div class="item-header">
-                        <h4>UNESCO International Hackathon</h4>
-                        <span class="item-badge">UNESCO Initiative</span>
-                    </div>
-                    <span class="item-sub">United Nations Educational, Scientific and Cultural Organization
-                        (UNESCO)</span>
-                    <p class="item-desc">
-                        Participated in the competitive international hackathon organized under UNESCO initiatives.
-                        Collaborated on developing sustainable social-impact technology prototypes, addressing digital
-                        inclusion and global challenges.
-                    </p>
-                </div>
-            </section>
-
-            <!-- Leadership Programs & Global Fellowships -->
-            <section class="section">
-                <h3 class="section-title"><i class="fas fa-globe-americas"></i> Leadership Programs & Global Fellowships</h3>
-                <div class="item-card" style="border-left-color: #0d9488;">
-                    <div class="item-header">
-                        <h4>Aspire Leaders Program &bull; Cohort 3 (2026)</h4>
-                        <span class="item-badge" style="background: #ccfbf1; color: #0f766e; border-color: #99f6e4;">Completed &bull; Fellow</span>
-                    </div>
-                    <span class="item-sub">Aspire Institute (Founded at Harvard University by HBS Faculty) &bull; July 22 – September 20, 2026</span>
-                    <p class="item-desc">
-                        Selected for and completed the competitive global leadership development initiative founded by Harvard Business School faculty (Professors Tarun Khanna and Karim Lakhani). Engaged in intensive masterclasses covering strengths-based self-leadership, critical problem-solving, ethical decision-making, and cross-cultural community impact within a worldwide cohort of emerging leaders across 150+ countries.
-                    </p>
-                </div>
-            </section>
-
-            <!-- Professional Experience -->
-            <section class="section">
-                <h3 class="section-title"><i class="fas fa-briefcase"></i> Professional Experience</h3>
-                <div class="item-card">
-                    <div class="item-header">
-                        <h4>Software Developer Intern</h4>
-                        <span class="item-badge">6 Months Duration</span>
-                    </div>
-                    <span class="item-sub">WOWBLY Technologies &bull; Faisalabad, Pakistan</span>
-                    <p class="item-desc">
-                        Contributed to the development and maintenance of high-performance web applications. Engineered
-                        automation workflows using n8n and Python to eliminate operational bottlenecks. Implemented
-                        backend APIs and database operations in an agile team setting.
-                    </p>
-                </div>
-            </section>
-
-            <!-- Key Engineered Projects -->
-            <section class="section">
-                <h3 class="section-title"><i class="fas fa-code-branch"></i> Flagship Engineering & Research Projects
-                </h3>
-                <div class="item-card">
-                    <div class="item-header">
-                        <h4>AI Daily Planner & Habit Tracker &bull; Intelligent Productivity Framework</h4>
-                        <span class="item-badge">Flutter &bull; FastAPI &bull; Speech NLP &bull; DOI Indexed</span>
-                    </div>
-                    <p class="item-desc">
-                        Full-stack decoupled productivity ecosystem incorporating speech-to-intent natural language understanding, automated hierarchical goal decomposition, and affective correlation analytics linking daily mood, energy (1–5), and habit sustainability. Backed by published research paper on Zenodo (DOI: 10.5281/zenodo.22733082).
-                    </p>
                     <div class="item-links">
-                        <a href="https://doi.org/10.5281/zenodo.22733082" target="_blank"><i class="fas fa-book-open"></i> Zenodo Research Paper (DOI)</a>
+                        <a href="https://doi.org/10.5281/zenodo.22733082" target="_blank"><i class="fas fa-file-alt"></i> Zenodo Research Preprint (DOI)</a>
                         <a href="https://github.com/mani828282/AI-Powered-Daily-Planner-and-Habit-Tracker" target="_blank"><i class="fab fa-github"></i> GitHub Codebase</a>
                         <a href="https://github.com/mani828282/portfolio/releases/download/v1.1/app-release.apk"><i class="fas fa-download"></i> Production APK</a>
                     </div>
                 </div>
 
-
-
+                <!-- 2. PetScan AI -->
                 <div class="item-card">
                     <div class="item-header">
-                        <h4>Insaf AI &bull; Legal Assistance & Consultancy Mobile App</h4>
-                        <span class="item-badge">Flutter &bull; Firebase &bull; LLM</span>
+                        <h4>PetScan AI — Computer Vision-Based Pet Pain/Distress Assessment</h4>
+                        <span class="item-badge">Computer Vision</span>
                     </div>
-                    <p class="item-desc">
-                        AI-powered legal advisory platform designed to simplify civic access to statutory legal codes.
-                        Features conversational AI guidance, case analysis, and document summaries.
-                    </p>
+                    <span class="item-sub">Roboflow &bull; FastAPI &bull; Python &bull; Flutter &bull; GitHub &bull; Demo</span>
+                    <ul class="cv-bullet-list">
+                        <li>Developed a computer-vision prototype for assessing visual distress indicators in canine and feline images using Roboflow vision pipelines, asynchronous FastAPI backend, and a Flutter mobile client.</li>
+                    </ul>
+                    <div class="cv-tags">
+                        <span class="cv-tag">Computer Vision</span>
+                        <span class="cv-tag">Roboflow</span>
+                        <span class="cv-tag">FastAPI</span>
+                        <span class="cv-tag">Python</span>
+                        <span class="cv-tag">Flutter</span>
+                    </div>
                     <div class="item-links">
-                        <a href="https://github.com/mani828282/Insaf_AI" target="_blank"><i class="fab fa-github"></i>
-                            GitHub Code</a>
-                        <a href="https://github.com/mani828282/portfolio/releases/download/v1.2/Insaf.AI.apk"><i
-                                class="fas fa-download"></i> Download APK</a>
+                        <a href="https://github.com/mani828282/PetScan-AI" target="_blank"><i class="fab fa-github"></i> GitHub Repository</a>
+                        <a href="https://pet-scan.live/" target="_blank"><i class="fas fa-globe"></i> Live Web Platform</a>
                     </div>
                 </div>
 
+                <!-- 3. TruthGrid AI -->
                 <div class="item-card">
                     <div class="item-header">
-                        <h4>PetScan AI &bull; Computer Vision Veterinary Diagnostics</h4>
-                        <span class="item-badge">Computer Vision &bull; Flutter &bull; FastAPI</span>
+                        <h4>TruthGrid AI — Automated Misinformation Verification & Fact-Checking</h4>
+                        <span class="item-badge">Fact Verification</span>
                     </div>
-                    <p class="item-desc">
-                        Non-invasive diagnostic mobile app and web ecosystem using computer vision models to assess
-                        distress and pain indicators in domestic animals.
-                    </p>
+                    <span class="item-sub">Python NLP &bull; Flutter &bull; REST APIs &bull; GitHub</span>
+                    <ul class="cv-bullet-list">
+                        <li>Engineered an automated verification application implementing NLP-driven claim extraction, cross-referencing textual claims against knowledge bases, and evidence comparison to detect misleading information.</li>
+                    </ul>
+                    <div class="cv-tags">
+                        <span class="cv-tag">NLP</span>
+                        <span class="cv-tag">Fact Verification</span>
+                        <span class="cv-tag">Python</span>
+                        <span class="cv-tag">Flutter</span>
+                        <span class="cv-tag">REST APIs</span>
+                    </div>
                     <div class="item-links">
-                        <a href="https://github.com/mani828282/PetScan-AI" target="_blank"><i class="fab fa-github"></i>
-                            App Repository</a>
-                        <a href="https://pet-scan.live/" target="_blank"><i class="fas fa-globe"></i> Live Web
-                            Platform</a>
+                        <a href="https://github.com/mani828282/TruthGrid-AI" target="_blank"><i class="fab fa-github"></i> GitHub Repository</a>
                     </div>
                 </div>
 
+                <!-- 4. Insaf AI -->
                 <div class="item-card">
                     <div class="item-header">
-                        <h4>TruthGrid AI &bull; Media Authenticity & Deepfake Verification</h4>
-                        <span class="item-badge">Dart &bull; Flutter &bull; AI Integrity</span>
+                        <h4>Insaf AI — Bilingual Legal Intake & Information Extraction</h4>
+                        <span class="item-badge">Legal NLP Prototype</span>
                     </div>
-                    <p class="item-desc">
-                        Verification engine designed to inspect multi-modal media anomalies, detecting synthetically
-                        generated video/imagery to ensure content authenticity.
-                    </p>
+                    <span class="item-sub">Groq Whisper &bull; Google Gemini API &bull; Firebase &bull; Flutter &bull; GitHub</span>
+                    <ul class="cv-bullet-list">
+                        <li>Developed a bilingual AI-assisted legal-intake prototype combining speech recognition, LLM-based reasoning, structured information extraction, Firebase synchronization, and Flutter.</li>
+                    </ul>
+                    <div class="cv-tags">
+                        <span class="cv-tag">Groq Whisper</span>
+                        <span class="cv-tag">Google Gemini API</span>
+                        <span class="cv-tag">Firebase</span>
+                        <span class="cv-tag">Flutter</span>
+                    </div>
                     <div class="item-links">
-                        <a href="https://github.com/mani828282/TruthGrid-AI" target="_blank"><i
-                                class="fab fa-github"></i> GitHub Repository</a>
+                        <a href="https://github.com/mani828282/Insaf_AI" target="_blank"><i class="fab fa-github"></i> GitHub Code</a>
+                        <a href="https://github.com/mani828282/portfolio/releases/download/v1.2/Insaf.AI.apk"><i class="fas fa-download"></i> Download APK</a>
                     </div>
                 </div>
 
+                <!-- 5. Managerial Quotient (MQ) -->
                 <div class="item-card">
                     <div class="item-header">
-                        <h4>Managerial Quotient &bull; Psychiatric Medical Assessment Web App</h4>
-                        <span class="item-badge">PHP &bull; MySQL &bull; Healthcare</span>
+                        <h4>Managerial Quotient (MQ) — Enterprise Psychometric Assessment Platform</h4>
+                        <span class="item-badge">Production Web App</span>
                     </div>
-                    <p class="item-desc">
-                        Advanced psychometric evaluation system engineered for structured psychiatric assessments,
-                        scoring analytics, and clinical report generation.
-                    </p>
+                    <span class="item-sub">PHP &bull; MySQL &bull; JavaScript &bull; Live Platform</span>
+                    <ul class="cv-bullet-list">
+                        <li>Engineered a production enterprise psychometric evaluation web application implementing standardized assessment rubrics, role-based access control, automated scoring algorithms, and dynamic PDF reporting.</li>
+                    </ul>
+                    <div class="cv-tags">
+                        <span class="cv-tag">PHP</span>
+                        <span class="cv-tag">MySQL</span>
+                        <span class="cv-tag">JavaScript</span>
+                        <span class="cv-tag">Enterprise Platform</span>
+                    </div>
                     <div class="item-links">
-                        <a href="https://www.managerialquotient.com" target="_blank"><i class="fas fa-globe"></i>
-                            www.managerialquotient.com</a>
+                        <a href="https://www.managerialquotient.com" target="_blank"><i class="fas fa-globe"></i> www.managerialquotient.com</a>
+                    </div>
+                </div>
+
+                <!-- 6. AI Portfolio -->
+                <div class="item-card">
+                    <div class="item-header">
+                        <h4>AI Portfolio — 10+ Deployed Python ML Applications & Microservices</h4>
+                        <span class="item-badge">Applied ML & Systems</span>
+                    </div>
+                    <span class="item-sub">PyTorch &bull; Gradio &bull; Streamlit &bull; Hugging Face Spaces &bull; GitHub</span>
+                    <ul class="cv-bullet-list">
+                        <li>Developed and deployed open-source machine learning apps and automation microservices across Hugging Face Spaces (<a href="https://huggingface.co/Rehman82" target="_blank" style="color: #4f46e5;">huggingface.co/Rehman82</a>) and GitHub (<a href="https://github.com/mani828282" target="_blank" style="color: #4f46e5;">mani828282</a>) utilizing PyTorch, Gradio, and Streamlit for NLP and automation tasks.</li>
+                    </ul>
+                    <div class="cv-tags">
+                        <span class="cv-tag">PyTorch</span>
+                        <span class="cv-tag">Gradio</span>
+                        <span class="cv-tag">Streamlit</span>
+                        <span class="cv-tag">Hugging Face</span>
+                        <span class="cv-tag">Microservices</span>
+                    </div>
+                    <div class="item-links">
+                        <a href="https://huggingface.co/Rehman82" target="_blank"><i class="fas fa-brain"></i> Hugging Face Spaces</a>
+                        <a href="https://github.com/mani828282" target="_blank"><i class="fab fa-github"></i> GitHub Repositories</a>
                     </div>
                 </div>
             </section>
 
-            <!-- Technical Skills & Research Competencies -->
+            <!-- Professional Work Experience -->
             <section class="section">
-                <h3 class="section-title"><i class="fas fa-cogs"></i> Technical Skills & Research Competencies</h3>
+                <h3 class="section-title"><i class="fas fa-briefcase"></i> Professional Work Experience</h3>
+
+                <!-- Role 1: WOWBLY Technologies -->
+                <div class="item-card">
+                    <div class="item-header">
+                        <h4>Software Developer Intern &bull; WOWBLY Technologies</h4>
+                        <span class="item-badge">07/2025 – 12/2025 &bull; 6 Months Full-Time</span>
+                    </div>
+                    <span class="item-sub">Faisalabad, Pakistan</span>
+                    <ul class="cv-bullet-list">
+                        <li>Developed and maintained production PHP web applications, implementing robust backend logic and integrating third-party RESTful APIs.</li>
+                        <li>Applied Python for automated data processing, performance profiling, and script-based management across PostgreSQL and MySQL databases.</li>
+                        <li>Collaborated in Agile engineering sprints, utilizing Git/GitHub for version control, code reviews, and production issue resolution.</li>
+                    </ul>
+                    <div class="cv-tags">
+                        <span class="cv-tag">PHP</span>
+                        <span class="cv-tag">Python</span>
+                        <span class="cv-tag">PostgreSQL</span>
+                        <span class="cv-tag">MySQL</span>
+                        <span class="cv-tag">REST APIs</span>
+                        <span class="cv-tag">Git</span>
+                    </div>
+                </div>
+
+                <!-- Role 2: N Software Development House -->
+                <div class="item-card">
+                    <div class="item-header">
+                        <h4>Computer Operator & Systems Assistant &bull; N Software Development House</h4>
+                        <span class="item-badge">01/2019 – 04/2020 &bull; 1 Year 4 Months</span>
+                    </div>
+                    <span class="item-sub">Sahiwal, Pakistan</span>
+                    <ul class="cv-bullet-list">
+                        <li>Administered digital record maintenance, document preparation pipelines, and office computing infrastructure.</li>
+                        <li>Provided technical support in database data entry, file organization, systems troubleshooting, and routine software administration.</li>
+                    </ul>
+                    <div class="cv-tags">
+                        <span class="cv-tag">Database Administration</span>
+                        <span class="cv-tag">Systems Troubleshooting</span>
+                        <span class="cv-tag">Data Entry</span>
+                        <span class="cv-tag">Office Infrastructure</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Honors & Fellowships -->
+            <section class="section">
+                <h3 class="section-title"><i class="fas fa-trophy"></i> Honors & Fellowships</h3>
+
+                <!-- 1. Aspire Leaders Program -->
+                <div class="item-card" style="border-left-color: #0d9488;">
+                    <div class="item-header">
+                        <h4>Global Leadership Fellow — Aspire Leaders Program (Cohort 3)</h4>
+                        <span class="item-badge" style="background: #ccfbf1; color: #0f766e; border: 1px solid #99f6e4;">2026 &bull; Global Fellowship</span>
+                    </div>
+                    <span class="item-sub" style="color: #0f766e;">Aspire Institute</span>
+                    <ul class="cv-bullet-list">
+                        <li>Selected into competitive global leadership development program uniting emerging scholars from 150+ countries; completed modules in ethical leadership, critical thinking, and community action.</li>
+                    </ul>
+                </div>
+
+                <!-- 2. World Startup Championship -->
+                <div class="item-card">
+                    <div class="item-header">
+                        <h4>Top 100 Startups in Pakistan — World Startup Championship 2025</h4>
+                        <span class="item-badge">2025 &bull; National Finalist</span>
+                    </div>
+                    <span class="item-sub">SEE Pakistan &bull; CMACED &bull; Association of Private Sector Universities of Pakistan (APSUP)</span>
+                    <ul class="cv-bullet-list">
+                        <li>Technical co-founder of REPLAI, shortlisted among Top 100 Startups Nationwide after competitive evaluation; completed accelerator rounds and pitched before venture panels.</li>
+                    </ul>
+                </div>
+
+                <!-- 3. Hackathons -->
+                <div class="item-card">
+                    <div class="item-header">
+                        <h4>Competitive Technical Hackathons</h4>
+                        <span class="item-badge">2026 &bull; Hackathons</span>
+                    </div>
+                    <span class="item-sub">Google for Developers / MoITT &bull; UNESCO</span>
+                    <ul class="cv-bullet-list">
+                        <li><strong>Google Antigravity National Hackathon (AI Seekho):</strong> Built Insaf AI under timed sprints, demonstrating multi-agent orchestration, prompt engineering, and Google Gemini API integration.</li>
+                        <li><strong>UNESCO International Youth Hackathon 2026:</strong> Engineered TruthGrid AI, an automated media verification prototype designed to detect and counter digital misinformation.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Technical Skills -->
+            <section class="section">
+                <h3 class="section-title"><i class="fas fa-cogs"></i> Technical Skills</h3>
                 <div class="skills-grid">
                     <div class="skill-category">
-                        <h4>Programming & AI</h4>
-                        <ul class="skill-list">
-                            <li>Python (NumPy, Pandas, Scikit-Learn)</li>
-                            <li>Hugging Face Transformers</li>
-                            <li>FastAPI & RESTful Architecture</li>
-                            <li>Dart / Flutter (Cross-Platform Mobile)</li>
-                            <li>JavaScript (ES6+), HTML5, CSS3</li>
-                            <li>PHP, SQL (PostgreSQL, MySQL)</li>
-                        </ul>
+                        <h4>Machine Learning & AI</h4>
+                        <p style="font-size: 0.9rem; color: #475569; line-height: 1.6;">
+                            PyTorch, Hugging Face Transformers, Scikit-learn, Low-Resource NLP, LLM APIs (Gemini, OpenAI), RAG, Multi-Agent Systems, Transfer Learning.
+                        </p>
                     </div>
                     <div class="skill-category">
-                        <h4>Systems, Cloud & DevOps</h4>
-                        <ul class="skill-list">
-                            <li>Google Cloud Platform & Firebase</li>
-                            <li>Docker Containerization</li>
-                            <li>Git, GitHub Version Control</li>
-                            <li>n8n Workflow Automation</li>
-                            <li>DigitalOcean, Vercel, Render</li>
-                            <li>Linux / Bash Scripting</li>
-                        </ul>
+                        <h4>NLP & Computer Vision</h4>
+                        <p style="font-size: 0.9rem; color: #475569; line-height: 1.6;">
+                            Speech-to-Intent / ASR (Whisper), Text Classification, Cross-Lingual Probing, Roboflow, Computer Vision Pipelines, Affective Analytics.
+                        </p>
                     </div>
                     <div class="skill-category">
-                        <h4>Research & Academic Tools</h4>
-                        <ul class="skill-list">
-                            <li>LaTeX / Overleaf Typesetting</li>
-                            <li>Google Colab GPU Environments</li>
-                            <li>Empirical AI Safety Benchmarking</li>
-                            <li>Prompt Engineering & RAG Design</li>
-                            <li>Statistical Hypothesis Testing</li>
-                            <li>Technical Writing & IEEE Formatting</li>
-                        </ul>
+                        <h4>Programming Languages</h4>
+                        <p style="font-size: 0.9rem; color: #475569; line-height: 1.6;">
+                            Python, Dart (Flutter), PHP, JavaScript (ES6+), C++, SQL, Bash/Linux Shell.
+                        </p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Backend & Databases</h4>
+                        <p style="font-size: 0.9rem; color: #475569; line-height: 1.6;">
+                            FastAPI, RESTful APIs, PostgreSQL, MySQL, Firebase Firestore, SQLite.
+                        </p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Cloud & Development</h4>
+                        <p style="font-size: 0.9rem; color: #475569; line-height: 1.6;">
+                            Google Cloud Platform (Cloud Run), Docker, Git/GitHub, Linux CLI, Postman, LaTeX.
+                        </p>
                     </div>
                 </div>
             </section>
 
-            <!-- Verified Honors & Certifications -->
+            <!-- Selected Certifications -->
             <section class="section">
-                <h3 class="section-title"><i class="fas fa-certificate"></i> Verified Certifications & Honors</h3>
+                <h3 class="section-title"><i class="fas fa-certificate"></i> Selected Certifications</h3>
                 <div class="cert-list">
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> Aspire Leaders Program &bull; Cohort 3 Fellow (Aspire Institute, founded at Harvard University)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> Google Antigravity National Hackathon (Google for Developers)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> World Startups Championship 2025 - Top 100 Startup (SEE Pakistan)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> 6-Month Software Development Certificate (WOWBLY Technologies)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> Foundations of Cybersecurity (Google via Coursera)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> Crash Course in Python (Google via Coursera)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> Technical Support Fundamentals (Google via Coursera)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> Foundations: Data Analytics (Google Data Specialization via Coursera)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> Ethics of Artificial Intelligence (Coursera)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> IEEE Congress Participation (IEEE Pakistan Section)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> IEEE Ethical Hacking & Security Workshop (IEEE Student Branch)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> Advancing the Digital Economy (Asian Development Bank Institute)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> Climate Change and Sovereign Risk (Asian Development Bank Institute)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> Green Investments in Renewable Energy (ADB Institute)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> Introduction to Peacebuilding (US Institute of Peace)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> Fundamentals of Digital Marketing (Google Digital Garage)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> Digital Marketing & Freelancing (DigiSkills Pakistan)</div>
-                    <div class="cert-item"><i class="fas fa-check-circle"></i> Social Media & Business Communications (HP LIFE)</div>
+                    <div class="cert-item" style="flex-direction: column; align-items: flex-start;">
+                        <div style="font-weight: 700; color: #0f172a; display: flex; align-items: center; gap: 6px;">
+                            <i class="fas fa-check-circle"></i> Ethics of Artificial Intelligence &bull; Google
+                        </div>
+                        <div style="font-size: 0.85rem; color: #64748b; margin-top: 4px;">
+                            Covered ethical considerations, bias mitigation, fairness, and safety frameworks in AI system development.
+                        </div>
+                    </div>
+                    <div class="cert-item" style="flex-direction: column; align-items: flex-start;">
+                        <div style="font-weight: 700; color: #0f172a; display: flex; align-items: center; gap: 6px;">
+                            <i class="fas fa-check-circle"></i> Data Analytics Professional Certificate &bull; Google / Coursera
+                        </div>
+                        <div style="font-size: 0.85rem; color: #64748b; margin-top: 4px;">
+                            Completed curriculum covering statistical analysis, data cleaning, modeling, and analytical reporting.
+                        </div>
+                    </div>
+                    <div class="cert-item" style="flex-direction: column; align-items: flex-start;">
+                        <div style="font-weight: 700; color: #0f172a; display: flex; align-items: center; gap: 6px;">
+                            <i class="fas fa-check-circle"></i> Crash Course in Python &bull; Google
+                        </div>
+                        <div style="font-size: 0.85rem; color: #64748b; margin-top: 4px;">
+                            Object-oriented programming, data structures, and automation scripting in Python.
+                        </div>
+                    </div>
+                    <div class="cert-item" style="flex-direction: column; align-items: flex-start;">
+                        <div style="font-weight: 700; color: #0f172a; display: flex; align-items: center; gap: 6px;">
+                            <i class="fas fa-check-circle"></i> Foundations of Cybersecurity &bull; Google
+                        </div>
+                        <div style="font-size: 0.85rem; color: #64748b; margin-top: 4px;">
+                            Core cybersecurity principles, threat modeling, network security, and risk analysis.
+                        </div>
+                    </div>
+                    <div class="cert-item" style="flex-direction: column; align-items: flex-start;">
+                        <div style="font-weight: 700; color: #0f172a; display: flex; align-items: center; gap: 6px;">
+                            <i class="fas fa-check-circle"></i> IEEE Congress & Ethical Hacking Workshop &bull; IEEE Pakistan / Student Branch
+                        </div>
+                        <div style="font-size: 0.85rem; color: #64748b; margin-top: 4px;">
+                            Technical sessions on network penetration fundamentals, defensive counter-measures, and community participation.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Language Proficiency -->
+            <section class="section">
+                <h3 class="section-title"><i class="fas fa-language"></i> Language Proficiency</h3>
+                <div class="lang-grid">
+                    <div class="lang-card">
+                        <div class="lang-title">Mother Tongue(s)</div>
+                        <div class="lang-desc">
+                            <strong>Urdu</strong> (National Language) &bull; <strong>Punjabi</strong> (Native)
+                        </div>
+                    </div>
+                    <div class="lang-card">
+                        <div class="lang-title">English Language</div>
+                        <div class="lang-desc">
+                            <strong>Full Professional & Academic Proficiency</strong> &mdash; Degree coursework, academic examinations, and technical research conducted entirely in English (Official Medium of Instruction [MOI] certificate available upon request).
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Academic Referees -->
+            <section class="section" style="margin-bottom: 0;">
+                <h3 class="section-title"><i class="fas fa-user-tie"></i> Academic Referees</h3>
+                <div class="referees-grid">
+                    <div class="referee-card">
+                        <div class="referee-name">Prof. Dr. M. Ramzan Talib</div>
+                        <div class="referee-title">Professor, Department of Computer Science</div>
+                        <div class="referee-inst">Government College University, Faisalabad (GCUF), Pakistan</div>
+                        <div class="referee-email">
+                            <a href="mailto:ramzan.talib@gcuf.edu.pk"><i class="fas fa-envelope"></i> ramzan.talib@gcuf.edu.pk</a>
+                        </div>
+                    </div>
+                    <div class="referee-card">
+                        <div class="referee-name">Dr. Muhammad Murad Khan</div>
+                        <div class="referee-title">Assistant Professor, Department of Bioinformatics</div>
+                        <div class="referee-inst">Government College University, Faisalabad (GCUF), Pakistan</div>
+                        <div class="referee-email">
+                            <a href="mailto:muhammadmurad@gcuf.edu.pk"><i class="fas fa-envelope"></i> muhammadmurad@gcuf.edu.pk</a>
+                        </div>
+                    </div>
                 </div>
             </section>
 
